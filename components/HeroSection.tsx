@@ -92,7 +92,7 @@ export default function HeroSection() {
           <p 
             className="text-text-secondary text-sm hover:text-primary-glow transition-colors duration-300 cursor-default"
           >
-            <span className="text-primary-highlight font-semibold hover:scale-110 transition-transform duration-300 inline-block">1,200+</span> developers have joined
+            <span className="text-primary-highlight font-semibold hover:scale-110 transition-transform duration-300 inline-block">500+</span> developers target by 2025
           </p>
         </div>
       </div>

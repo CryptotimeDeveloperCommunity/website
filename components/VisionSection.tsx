@@ -173,7 +173,7 @@ export default function VisionSection() {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <a 
-            href="https://discord.gg/cryptotime" 
+            href="https://t.me/zhoumo_828" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-3 bg-primary-glow hover:bg-primary-light text-bg-primary rounded-2xl px-8 py-4 font-semibold text-lg transition-all duration-300 hover:scale-105 cursor-pointer group"
