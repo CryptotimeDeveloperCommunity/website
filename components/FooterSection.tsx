@@ -1,9 +1,12 @@
 'use client'
 
-import { MessageCircle, Mail, Github, Twitter, Globe, ArrowUp } from 'lucide-react'
+import { MessageCircle, Mail, Github, Twitter, Send, ArrowUp, MessageSquare, Heart, X } from 'lucide-react'
 import Image from 'next/image'
+import { useState } from 'react'
 
 export default function FooterSection() {
+  const [showQRCode, setShowQRCode] = useState(false)
+  const [showXiaohongshu, setShowXiaohongshu] = useState(false)
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
@@ -20,20 +23,20 @@ export default function FooterSection() {
                 <Image 
                   src="/logos/logo.png" 
                   alt="CryptoTime" 
-                  width={120}
-                  height={40}
-                  className="h-10 w-auto"
+                  width={150}
+                  height={50}
+                  className="h-14 w-auto"
                   priority
                 />
               </div>
               
               <p className="text-text-secondary leading-relaxed mb-6 max-w-md">
-                AI-powered Web3 developer community for Chinese speakers, lowering Web3 barriers with AI, building an open collaborative developer ecosystem.
+                <span className="text-primary-glow">AI + Web3</span> developer community, building an open collaborative ecosystem for the future of technology.
               </p>
               
               <div className="flex space-x-4">
                 <a 
-                  href="https://discord.gg/cryptotime" 
+                  href="https://t.me/zhoumo_828" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-primary-glow/20 rounded-lg flex items-center justify-center hover:bg-primary-glow/30 transition-colors"
@@ -42,7 +45,7 @@ export default function FooterSection() {
                 </a>
                 
                 <a 
-                  href="https://github.com/cryptotime" 
+                  href="https://github.com/CryptotimeDeveloperCommunity" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-primary-glow/20 rounded-lg flex items-center justify-center hover:bg-primary-glow/30 transition-colors"
@@ -51,7 +54,7 @@ export default function FooterSection() {
                 </a>
                 
                 <a 
-                  href="https://twitter.com/cryptotime" 
+                  href="https://x.com/CryptoTimeDC" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-primary-glow/20 rounded-lg flex items-center justify-center hover:bg-primary-glow/30 transition-colors"
@@ -66,22 +69,35 @@ export default function FooterSection() {
               <h3 className="text-lg font-bold text-text-primary mb-4">Quick Links</h3>
               <ul className="space-y-3">
                 <li>
-                  <a href="#about" className="text-text-secondary hover:text-primary-glow transition-colors">
-                    About Us
+                  <a 
+                    href="#team" 
+                    className="text-text-secondary hover:text-primary-glow transition-colors"
+                    onClick={() => {
+                      document.getElementById('team')?.scrollIntoView({ behavior: 'smooth' })
+                    }}
+                  >
+                    Team
                   </a>
                 </li>
                 <li>
-                  <a href="#services" className="text-text-secondary hover:text-primary-glow transition-colors">
-                    Services
+                  <a 
+                    href="#value" 
+                    className="text-text-secondary hover:text-primary-glow transition-colors"
+                    onClick={() => {
+                      document.getElementById('value')?.scrollIntoView({ behavior: 'smooth' })
+                    }}
+                  >
+                    Value
                   </a>
                 </li>
                 <li>
-                  <a href="#community" className="text-text-secondary hover:text-primary-glow transition-colors">
-                    Community
-                  </a>
-                </li>
-                <li>
-                  <a href="#roadmap" className="text-text-secondary hover:text-primary-glow transition-colors">
+                  <a 
+                    href="#roadmap" 
+                    className="text-text-secondary hover:text-primary-glow transition-colors"
+                    onClick={() => {
+                      document.getElementById('roadmap')?.scrollIntoView({ behavior: 'smooth' })
+                    }}
+                  >
                     Roadmap
                   </a>
                 </li>
@@ -93,16 +109,44 @@ export default function FooterSection() {
               <h3 className="text-lg font-bold text-text-primary mb-4">Contact Us</h3>
               <ul className="space-y-3">
                 <li className="flex items-center space-x-3">
-                  <MessageCircle className="w-4 h-4 text-primary-glow" />
-                  <span className="text-text-secondary">@zhoumo_828</span>
+                  <Send className="w-4 h-4 text-primary-glow" />
+                  <a 
+                    href="https://t.me/zhoumo_828" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-text-secondary hover:text-primary-glow transition-colors"
+                  >
+                    @zhoumo_828
+                  </a>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <Mail className="w-4 h-4 text-primary-glow" />
-                  <span className="text-text-secondary">contact@cryptotime.com</span>
+                  <Twitter className="w-4 h-4 text-primary-glow" />
+                  <a 
+                    href="https://x.com/CryptoTimeDC" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-text-secondary hover:text-primary-glow transition-colors"
+                  >
+                    @CryptoTimeDC
+                  </a>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <Globe className="w-4 h-4 text-primary-glow" />
-                  <span className="text-text-secondary">cryptotime.com</span>
+                  <MessageSquare className="w-4 h-4 text-primary-glow" />
+                  <button 
+                    onClick={() => setShowQRCode(true)}
+                    className="text-text-secondary hover:text-primary-glow transition-colors cursor-pointer"
+                  >
+                  WeChat Official Account
+                  </button>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <Heart className="w-4 h-4 text-primary-glow" />
+                  <button 
+                    onClick={() => setShowXiaohongshu(true)}
+                    className="text-text-secondary hover:text-primary-glow transition-colors cursor-pointer"
+                  >
+                  Xiaohongshu
+                  </button>
                 </li>
               </ul>
             </div>
@@ -113,17 +157,10 @@ export default function FooterSection() {
         <div className="py-6 border-t border-text-primary/10">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-text-secondary text-sm mb-4 md:mb-0">
-              © 2024 CryptoTime Developer Community. All rights reserved.
+              © 2025 CryptoTime. All rights reserved.
             </div>
             
-            <div className="flex items-center space-x-6">
-              <a href="/privacy" className="text-text-secondary hover:text-primary-glow transition-colors text-sm">
-                Privacy Policy
-              </a>
-              <a href="/terms" className="text-text-secondary hover:text-primary-glow transition-colors text-sm">
-                Terms of Service
-              </a>
-              
+            <div className="flex items-center">
               {/* Back to Top Button */}
               <button
                 onClick={scrollToTop}
@@ -135,6 +172,64 @@ export default function FooterSection() {
           </div>
         </div>
       </div>
+
+      {/* QR Code Modal */}
+      {showQRCode && (
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="bg-bg-primary border border-primary-glow/30 rounded-2xl p-6 max-w-md w-full relative">
+            <button
+              onClick={() => setShowQRCode(false)}
+              className="absolute top-4 right-4 text-text-secondary hover:text-primary-glow transition-colors"
+            >
+              <X size={24} />
+            </button>
+            <div className="text-center">
+              <h3 className="text-xl font-bold text-text-primary mb-4">WeChat Official Account</h3>
+              <div className="flex justify-center">
+                <Image 
+                  src="/logos/qrcode.jpg" 
+                  alt="WeChat QR Code" 
+                  width={300} 
+                  height={300}
+                  className="rounded-lg"
+                />
+              </div>
+              <p className="text-text-secondary mt-4 text-sm">
+                Scan to follow our WeChat Official Account
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Xiaohongshu Modal */}
+      {showXiaohongshu && (
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="bg-bg-primary border border-primary-glow/30 rounded-2xl p-6 max-w-md w-full relative">
+            <button
+              onClick={() => setShowXiaohongshu(false)}
+              className="absolute top-4 right-4 text-text-secondary hover:text-primary-glow transition-colors"
+            >
+              <X size={24} />
+            </button>
+            <div className="text-center">
+              <h3 className="text-xl font-bold text-text-primary mb-4">Xiaohongshu</h3>
+              <div className="flex justify-center">
+                <Image 
+                  src="/logos/xiaohongshu.jpg" 
+                  alt="Xiaohongshu QR Code" 
+                  width={300} 
+                  height={300}
+                  className="rounded-lg"
+                />
+              </div>
+              <p className="text-text-secondary mt-4 text-sm">
+                Scan to follow us on Xiaohongshu
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
     </footer>
   )
 }

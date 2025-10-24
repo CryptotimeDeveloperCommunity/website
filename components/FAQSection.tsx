@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { HelpCircle, ChevronDown, ChevronUp, Code, Users, Gift, Lightbulb, Target } from 'lucide-react'
+import { ChevronDown, ChevronUp, Code, Users, Gift, Lightbulb, Target } from 'lucide-react'
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
@@ -102,31 +102,6 @@ export default function FAQSection() {
           })}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-primary-glow/10 to-primary-light/10 rounded-3xl p-8 border border-primary-glow/20">
-            <div className="flex items-center justify-center mb-4">
-              <HelpCircle className="w-8 h-8 text-primary-glow mr-3" />
-              <h3 className="text-2xl font-bold text-text-primary">Have more questions?</h3>
-            </div>
-            
-            <p className="text-text-secondary mb-6">
-              Feel free to contact us anytime, we'll reply to your questions as soon as possible
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="group inline-flex items-center space-x-3 bg-primary-glow hover:bg-primary-light text-bg-primary rounded-2xl px-6 py-3 font-semibold transition-all duration-300 hover:scale-105">
-                <span>Contact Us</span>
-                <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
-              </button>
-              
-              <button className="group inline-flex items-center space-x-3 bg-transparent border border-primary-glow/30 text-primary-glow hover:bg-primary-glow/10 rounded-2xl px-6 py-3 font-semibold transition-all duration-300 hover:scale-105">
-                <span>View Documentation</span>
-                <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

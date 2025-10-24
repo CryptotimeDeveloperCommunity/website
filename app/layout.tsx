@@ -5,8 +5,17 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'CryptoTime开发者社区',
-  description: 'AI驱动的华语区Web3开发者社区 | 用AI降低Web3门槛',
+  title: 'CryptoTime - AI + Web3 Developer Community',
+  description: 'AI + Web3 Developer Community for Chinese Speakers | Bridging AI Innovation with Web3 Technology',
+  icons: {
+    icon: [
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/favicon-32x32.png',
+  },
 }
 
 export default function RootLayout({
@@ -15,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="zh-CN">
+    <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
   )

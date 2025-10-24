@@ -4,7 +4,7 @@ import { Calendar, Clock, CheckCircle, ArrowDown } from 'lucide-react'
 
 export default function RoadmapSection() {
   return (
-    <section className="py-20 bg-bg-primary">
+    <section id="roadmap" className="py-20 bg-bg-primary">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-16">
@@ -12,7 +12,7 @@ export default function RoadmapSection() {
             🗺️ Roadmap
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-            我们的发展路线图，从当前目标到中期愿景
+            Our development roadmap, from current goals to medium-term vision
           </p>
           <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full mt-6"></div>
         </div>
@@ -37,8 +37,8 @@ export default function RoadmapSection() {
                   <div className="flex items-center mb-6">
                     <Calendar className="w-8 h-8 text-primary-glow mr-4" />
                     <div>
-                      <h3 className="text-2xl font-bold text-text-primary">当前目标</h3>
-                      <p className="text-primary-glow font-semibold">1个月</p>
+                      <h3 className="text-2xl font-bold text-text-primary">Current Goals</h3>
+                      <p className="text-primary-glow font-semibold">1 Month</p>
                     </div>
                   </div>
                   
@@ -48,8 +48,8 @@ export default function RoadmapSection() {
                         <div className="w-2 h-2 bg-primary-glow rounded-full animate-pulse"></div>
                       </div>
                       <div>
-                        <p className="text-text-primary font-semibold">首批核心内容生产</p>
-                        <p className="text-text-secondary text-sm">Web3内容体系搭建、AI学习路径搭建</p>
+                        <p className="text-text-primary font-semibold">First batch of core content production</p>
+                        <p className="text-text-secondary text-sm">Web3 content system building, AI learning path development</p>
                       </div>
                     </div>
                     
@@ -58,8 +58,8 @@ export default function RoadmapSection() {
                         <div className="w-2 h-2 bg-primary-glow rounded-full animate-pulse"></div>
                       </div>
                       <div>
-                        <p className="text-text-primary font-semibold">种子用户招募</p>
-                        <p className="text-text-secondary text-sm">首批100-200名成员</p>
+                        <p className="text-text-primary font-semibold">Seed user recruitment</p>
+                        <p className="text-text-secondary text-sm">First batch of 100-200 members</p>
                       </div>
                     </div>
                   </div>
@@ -80,8 +80,8 @@ export default function RoadmapSection() {
                   <div className="flex items-center mb-6">
                     <Calendar className="w-8 h-8 text-primary-glow mr-4" />
                     <div>
-                      <h3 className="text-2xl font-bold text-text-primary">近期目标</h3>
-                      <p className="text-primary-glow font-semibold">3个月</p>
+                      <h3 className="text-2xl font-bold text-text-primary">Recent Goals</h3>
+                      <p className="text-primary-glow font-semibold">3 Months</p>
                     </div>
                   </div>
                   
@@ -91,8 +91,8 @@ export default function RoadmapSection() {
                         <div className="w-2 h-2 bg-primary-glow rounded-full"></div>
                       </div>
                       <div>
-                        <p className="text-text-primary font-semibold">发布Web3知识库1.0版本</p>
-                        <p className="text-text-secondary text-sm">覆盖10+主流公链</p>
+                        <p className="text-text-primary font-semibold">Release Web3 Knowledge Base 1.0</p>
+                        <p className="text-text-secondary text-sm">Covering 10+ mainstream blockchains</p>
                       </div>
                     </div>
                     
@@ -101,8 +101,8 @@ export default function RoadmapSection() {
                         <div className="w-2 h-2 bg-primary-glow rounded-full"></div>
                       </div>
                       <div>
-                        <p className="text-text-primary font-semibold">启动首期共学课程</p>
-                        <p className="text-text-secondary text-sm">系统性学习Web3技术</p>
+                        <p className="text-text-primary font-semibold">Launch first collaborative learning course</p>
+                        <p className="text-text-secondary text-sm">Systematic Web3 technology learning</p>
                       </div>
                     </div>
                     
@@ -111,8 +111,8 @@ export default function RoadmapSection() {
                         <div className="w-2 h-2 bg-primary-glow rounded-full"></div>
                       </div>
                       <div>
-                        <p className="text-text-primary font-semibold">达成2-3个公链/项目方合作</p>
-                        <p className="text-text-secondary text-sm">建立生态合作关系</p>
+                        <p className="text-text-primary font-semibold">Establish 2-3 blockchain/project partnerships</p>
+                        <p className="text-text-secondary text-sm">Building ecosystem cooperation relationships</p>
                       </div>
                     </div>
                   </div>
@@ -133,8 +133,8 @@ export default function RoadmapSection() {
                   <div className="flex items-center mb-6">
                     <Calendar className="w-8 h-8 text-primary-glow mr-4" />
                     <div>
-                      <h3 className="text-2xl font-bold text-text-primary">中期目标</h3>
-                      <p className="text-primary-glow font-semibold">6-12个月</p>
+                      <h3 className="text-2xl font-bold text-text-primary">Medium-term Goals</h3>
+                      <p className="text-primary-glow font-semibold">6-12 Months</p>
                     </div>
                   </div>
                   
@@ -144,8 +144,8 @@ export default function RoadmapSection() {
                         <div className="w-2 h-2 bg-primary-glow rounded-full"></div>
                       </div>
                       <div>
-                        <p className="text-text-primary font-semibold">社区规模达到1000+活跃成员</p>
-                        <p className="text-text-secondary text-sm">建立强大的开发者网络</p>
+                        <p className="text-text-primary font-semibold">Community scale reaches 1000+ active members</p>
+                        <p className="text-text-secondary text-sm">Building a strong developer network</p>
                       </div>
                     </div>
                     
@@ -154,8 +154,8 @@ export default function RoadmapSection() {
                         <div className="w-2 h-2 bg-primary-glow rounded-full"></div>
                       </div>
                       <div>
-                        <p className="text-text-primary font-semibold">孵化10+优质项目进入生态</p>
-                        <p className="text-text-secondary text-sm">从idea到生态贡献</p>
+                        <p className="text-text-primary font-semibold">Incubate 10+ quality projects into ecosystem</p>
+                        <p className="text-text-secondary text-sm">From idea to ecosystem contribution</p>
                       </div>
                     </div>
                     
@@ -164,8 +164,8 @@ export default function RoadmapSection() {
                         <div className="w-2 h-2 bg-primary-glow rounded-full"></div>
                       </div>
                       <div>
-                        <p className="text-text-primary font-semibold">建立可持续的grant/收益分配机制</p>
-                        <p className="text-text-secondary text-sm">长期激励机制</p>
+                        <p className="text-text-primary font-semibold">Establish sustainable grant/revenue distribution mechanism</p>
+                        <p className="text-text-secondary text-sm">Long-term incentive mechanism</p>
                       </div>
                     </div>
                   </div>
@@ -175,25 +175,6 @@ export default function RoadmapSection() {
           </div>
         </div>
 
-        {/* Bottom Stats */}
-        <div className="text-center mt-16">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-bg-secondary/30 rounded-2xl p-6 border border-text-primary/10">
-              <div className="text-3xl font-bold text-primary-glow mb-2">100-200</div>
-              <div className="text-text-secondary">种子用户</div>
-            </div>
-            
-            <div className="bg-bg-secondary/30 rounded-2xl p-6 border border-text-primary/10">
-              <div className="text-3xl font-bold text-primary-glow mb-2">1000+</div>
-              <div className="text-text-secondary">活跃成员</div>
-            </div>
-            
-            <div className="bg-bg-secondary/30 rounded-2xl p-6 border border-text-primary/10">
-              <div className="text-3xl font-bold text-primary-glow mb-2">10+</div>
-              <div className="text-text-secondary">孵化项目</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )
