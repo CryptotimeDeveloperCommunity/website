@@ -39,22 +39,64 @@ export default function HeroSection() {
 
       {/* Main Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        {/* Floating particles around title */}
+        <div className="absolute inset-0 pointer-events-none">
+          {[...Array(8)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-2 h-2 bg-primary-glow rounded-full opacity-0 group-hover:opacity-60 transition-all duration-1000 animate-pulse"
+              style={{
+                left: `${20 + Math.random() * 60}%`,
+                top: `${30 + Math.random() * 40}%`,
+                animationDelay: `${i * 0.2}s`,
+                animationDuration: `${1.5 + Math.random() * 1}s`,
+                transform: `translate(${(Math.random() - 0.5) * 100}px, ${(Math.random() - 0.5) * 100}px)`
+              }}
+            />
+          ))}
+        </div>
         {/* Main Title */}
         <h1 
-          className="text-hero-title font-bold text-text-primary mb-8 leading-tight font-display hover:text-primary-glow transition-all duration-500 cursor-default"
+          className="text-hero-title font-black text-text-primary mb-8 leading-tight cursor-default group font-orbitron tracking-wider flex flex-col items-center"
+          style={{
+            fontFamily: 'var(--font-orbitron)',
+            textShadow: '0 0 10px rgba(255, 165, 0, 0.3), 0 0 20px rgba(255, 165, 0, 0.2), 0 0 30px rgba(255, 165, 0, 0.1)',
+            WebkitTextStroke: '1px rgba(255, 165, 0, 0.2)'
+          }}
         >
-          CryptoTime Developer Community
+          <div className="relative inline-block transition-all duration-500 group-hover:scale-105 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary-glow group-hover:via-primary-light group-hover:to-primary-glow group-hover:drop-shadow-[0_0_30px_rgba(255,165,0,0.8)] group-hover:tracking-widest">
+            CryptoTime
+            {/* Sci-fi glow effect overlay */}
+            <div className="absolute inset-0 text-primary-glow opacity-0 group-hover:opacity-40 transition-opacity duration-500 blur-sm -z-10 font-orbitron">
+              CryptoTime
+            </div>
+            {/* Neon border effect */}
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-20">
+              <div className="absolute inset-0 border-2 border-primary-glow rounded-lg blur-sm"></div>
+            </div>
+          </div>
+          <div className="relative inline-block transition-all duration-500 group-hover:scale-105 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary-light group-hover:via-primary-glow group-hover:to-primary-light group-hover:drop-shadow-[0_0_30px_rgba(255,165,0,0.8)] group-hover:rotate-1 group-hover:tracking-widest whitespace-nowrap">
+            Developer Community
+            {/* Sci-fi glow effect overlay */}
+            <div className="absolute inset-0 text-primary-light opacity-0 group-hover:opacity-40 transition-opacity duration-500 blur-sm -z-10 font-orbitron">
+              Developer Community
+            </div>
+            {/* Neon border effect */}
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-20">
+              <div className="absolute inset-0 border-2 border-primary-light rounded-lg blur-sm"></div>
+            </div>
+          </div>
         </h1>
 
         {/* Subtitle */}
         <div className="mb-10 space-y-3">
-          <p className="text-hero-subtitle text-text-primary font-medium hover:text-primary-glow transition-colors duration-300 cursor-default">
-            <span className="text-primary-glow">AI</span> + <span className="text-primary-glow">Web3</span> Developer Community for Chinese Speakers
+          <p className="text-hero-subtitle text-text-primary font-semibold hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide">
+            <span className="text-primary-glow font-bold">AI</span> + <span className="text-primary-glow font-bold">Web3</span> Developer Community for Chinese Speakers
           </p>
-          <p className="text-hero-description text-text-secondary hover:text-primary-glow transition-colors duration-300 cursor-default">
+          <p className="text-hero-description text-text-secondary hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide">
             Bridging AI Innovation with Web3 Technology
           </p>
-          <p className="text-base text-text-secondary/80 hover:text-primary-glow transition-colors duration-300 cursor-default">
+          <p className="text-base text-text-secondary/80 hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide">
             Collaborative Learning × Open Collaboration | From Code to Career
           </p>
         </div>

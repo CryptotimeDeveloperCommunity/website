@@ -4,13 +4,40 @@ import { Brain, Users, Network, Target } from 'lucide-react'
 
 export default function WhySection() {
   return (
-    <section className="py-20 bg-bg-primary">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-bg-primary relative overflow-hidden">
+      {/* Dynamic Background Elements */}
+      <div className="absolute inset-0">
+        {/* Floating geometric shapes */}
+        {[...Array(6)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-4 h-4 border border-primary-glow/20 rounded-full opacity-30 animate-pulse"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${i * 0.5}s`,
+              animationDuration: `${2 + Math.random() * 2}s`
+            }}
+          />
+        ))}
+        {/* Grid pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,165,0,0.3) 1px, transparent 0)`,
+            backgroundSize: '50px 50px'
+          }}></div>
+        </div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6 font-display">
+          <h2 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6 font-orbitron tracking-wide" style={{
+            textShadow: '0 0 10px rgba(255, 165, 0, 0.2)',
+            WebkitTextStroke: '0.5px rgba(255, 165, 0, 0.1)'
+          }}>
             Why are we building this{' '}
-            <span className="text-primary-glow">AI + Web3</span>{' '}
+            <span className="text-primary-glow font-black">AI + Web3</span>{' '}
             developer community?
           </h2>
           <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full"></div>

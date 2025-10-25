@@ -5,17 +5,40 @@ import { Globe, Target, Users, Heart, ArrowDown, ArrowRight, Code, Zap, BookOpen
 export default function VisionSection() {
   return (
     <section className="py-20 bg-bg-secondary relative overflow-hidden">
-      {/* Background Pattern */}
+      {/* Enhanced Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-primary-glow rounded-full"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-24 h-24 border border-primary-glow rounded-full"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 border border-primary-glow rounded-full"></div>
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-primary-glow rounded-full animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-24 h-24 border border-primary-glow rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 border border-primary-glow rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
+        
+        {/* Holographic grid */}
+        <div className="absolute inset-0" style={{
+          backgroundImage: `linear-gradient(rgba(255,165,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,165,0,0.1) 1px, transparent 1px)`,
+          backgroundSize: '100px 100px'
+        }}></div>
+        
+        {/* Floating particles */}
+        {[...Array(8)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-3 h-3 bg-primary-glow rounded-full opacity-20 animate-pulse"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${i * 0.4}s`,
+              animationDuration: `${2 + Math.random() * 1}s`
+            }}
+          />
+        ))}
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6 font-display">
+          <h2 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6 font-orbitron tracking-wide" style={{
+            textShadow: '0 0 10px rgba(255, 165, 0, 0.2)',
+            WebkitTextStroke: '0.5px rgba(255, 165, 0, 0.1)'
+          }}>
             🌏 Our Vision
           </h2>
           <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full"></div>

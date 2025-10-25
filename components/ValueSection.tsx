@@ -5,14 +5,63 @@ import { BookOpen, Users, Zap, Briefcase, Heart } from 'lucide-react'
 export default function ValueSection() {
   return (
     <section id="value" className="py-20 bg-bg-primary relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      {/* Sci-fi Background Effects */}
+      <div className="absolute inset-0">
+        {/* Animated connection lines */}
+        <div className="absolute inset-0">
+          <svg className="w-full h-full opacity-10">
+            <defs>
+              <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="rgba(255,165,0,0.8)" />
+                <stop offset="50%" stopColor="rgba(255,165,0,0.4)" />
+                <stop offset="100%" stopColor="rgba(255,165,0,0.8)" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M 100 200 Q 400 100 700 200 T 1200 200"
+              stroke="url(#lineGradient)"
+              strokeWidth="2"
+              fill="none"
+              strokeDasharray="5,5"
+              className="animate-pulse"
+            />
+            <path
+              d="M 200 400 Q 500 300 800 400 T 1100 400"
+              stroke="url(#lineGradient)"
+              strokeWidth="2"
+              fill="none"
+              strokeDasharray="8,8"
+              className="animate-pulse"
+              style={{ animationDelay: '1s' }}
+            />
+          </svg>
+        </div>
+        {/* Floating particles */}
+        {[...Array(12)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-2 h-2 bg-primary-glow rounded-full opacity-20 animate-pulse"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${i * 0.3}s`,
+              animationDuration: `${1.5 + Math.random() * 1}s`
+            }}
+          />
+        ))}
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6 font-display">
+          <h2 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6 font-orbitron tracking-wide" style={{
+            textShadow: '0 0 10px rgba(255, 165, 0, 0.2)',
+            WebkitTextStroke: '0.5px rgba(255, 165, 0, 0.1)'
+          }}>
             What can you get by joining us?
           </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-            We are building infrastructure for <span className="text-primary-glow">AI + Web3</span> creators
+          <p className="text-xl text-text-secondary max-w-3xl mx-auto font-exo2 tracking-wide">
+            We are building infrastructure for <span className="text-primary-glow font-bold">AI + Web3</span> creators
           </p>
           <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full mt-6"></div>
         </div>

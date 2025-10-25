@@ -27,30 +27,33 @@ export default function Navigation() {
                 <div className="hidden md:flex items-center space-x-8">
                   <a 
                     href="#team" 
-                    className="text-text-secondary hover:text-text-primary transition-colors"
+                    className="text-text-secondary hover:text-primary-glow transition-all duration-300 font-exo2 tracking-wide relative group"
                     onClick={() => {
                       document.getElementById('team')?.scrollIntoView({ behavior: 'smooth' })
                     }}
                   >
-                    Team
+                    <span className="relative z-10">Team</span>
+                    <div className="absolute inset-0 bg-primary-glow/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg blur-sm -z-10"></div>
                   </a>
                   <a 
                     href="#value" 
-                    className="text-text-secondary hover:text-text-primary transition-colors"
+                    className="text-text-secondary hover:text-primary-glow transition-all duration-300 font-exo2 tracking-wide relative group"
                     onClick={() => {
                       document.getElementById('value')?.scrollIntoView({ behavior: 'smooth' })
                     }}
                   >
-                    Value
+                    <span className="relative z-10">Value</span>
+                    <div className="absolute inset-0 bg-primary-glow/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg blur-sm -z-10"></div>
                   </a>
                   <a 
                     href="#roadmap" 
-                    className="text-text-secondary hover:text-text-primary transition-colors"
+                    className="text-text-secondary hover:text-primary-glow transition-all duration-300 font-exo2 tracking-wide relative group"
                     onClick={() => {
                       document.getElementById('roadmap')?.scrollIntoView({ behavior: 'smooth' })
                     }}
                   >
-                    Roadmap
+                    <span className="relative z-10">Roadmap</span>
+                    <div className="absolute inset-0 bg-primary-glow/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg blur-sm -z-10"></div>
                   </a>
                 </div>
 
