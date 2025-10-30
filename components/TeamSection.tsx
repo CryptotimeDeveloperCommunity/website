@@ -34,7 +34,7 @@ export default function TeamSection() {
               </div>
               <h3 className="text-3xl font-semibold text-text-primary mb-2">Zhou Mo</h3>
               <p className="text-xl text-primary-glow mb-4">Ecosystem Connector</p>
-              <p className="text-text-secondary mb-6 max-w-md">Digital nomad culture promoter, core builder of Chinese youth community ecosystem. Experienced blockchain ecosystem pain points: talent loss, shallow events, declining community vitality.</p>
+              <p className="text-text-secondary mb-6 max-w-md">Crypto nomad for 3 years, focused on AI and digital nomad communities in East China. Organizer of the China Digital Nomad Conference, connecting 100+ communities and more than 1,000 creators and developers.</p>
               <div className="flex flex-wrap justify-center gap-2">
                 <span className="bg-bg-primary border border-text-secondary/30 text-text-secondary text-sm px-4 py-2 rounded-full group-hover:border-primary-light group-hover:text-primary-light transition-colors duration-300">
                   Ecosystem Design
