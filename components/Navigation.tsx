@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Menu, X, MessageCircle, Globe } from 'lucide-react'
+import { Menu, X, Sparkles } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Navigation() {
@@ -58,15 +58,28 @@ export default function Navigation() {
                 </div>
 
           {/* Right Side Actions */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center">
             <a 
-              href="https://t.me/zhoumo_828" 
+              href="https://github.com/CryptotimeDeveloperCommunity/DeAI" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group flex items-center space-x-3 bg-gradient-to-r from-primary-glow/10 to-primary-light/10 border border-primary-glow/30 rounded-2xl px-6 py-3 text-text-primary hover:bg-gradient-to-r hover:from-primary-glow/20 hover:to-primary-light/20 hover:border-primary-glow/50 transition-all duration-300 hover:scale-105"
+              className="group relative flex items-center space-x-2 bg-gradient-to-r from-primary-glow to-primary-light rounded-2xl px-6 py-3.5 text-bg-primary hover:from-primary-light hover:to-primary-glow transition-all duration-300 hover:scale-105 font-semibold shadow-2xl shadow-primary-glow/50 overflow-visible border-2 border-primary-glow/30 hover:border-primary-glow/60"
             >
-              <MessageCircle size={18} className="text-primary-glow group-hover:scale-110 transition-transform duration-300" />
-              <span className="font-semibold">Join Community</span>
+              {/* Enhanced Pulse Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary-glow to-primary-light rounded-2xl animate-pulse opacity-50"></div>
+              
+              {/* Glowing Border Effect */}
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-glow via-primary-light to-primary-glow rounded-2xl opacity-30 blur-sm group-hover:opacity-60 transition-opacity duration-300 animate-pulse"></div>
+              
+              {/* Sparkle Icon */}
+              <Sparkles size={16} className="relative z-10 text-bg-primary animate-pulse group-hover:rotate-180 transition-transform duration-500" />
+              
+              <span className="relative z-10">DeAI Handbook</span>
+              
+              {/* NEW Badge */}
+              <span className="absolute -top-2 -right-2 bg-gradient-to-r from-red-500 to-orange-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-lg animate-bounce z-20 border border-white/30">
+                NEW
+              </span>
             </a>
           </div>
 
@@ -117,13 +130,26 @@ export default function Navigation() {
               </a>
               <div className="border-t border-white/10 pt-2 mt-2">
                 <a 
-                  href="https://t.me/zhoumo_828" 
+                  href="https://github.com/CryptotimeDeveloperCommunity/DeAI" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="group flex items-center space-x-3 bg-gradient-to-r from-primary-glow/20 to-primary-light/20 border border-primary-glow/40 rounded-xl px-4 py-3 text-white hover:bg-gradient-to-r hover:from-primary-glow/30 hover:to-primary-light/30 transition-all duration-300 mx-3"
+                  className="group relative flex items-center justify-center space-x-2 bg-gradient-to-r from-primary-glow to-primary-light rounded-xl px-5 py-3.5 text-bg-primary hover:from-primary-light hover:to-primary-glow transition-all duration-300 font-semibold shadow-2xl shadow-primary-glow/50 overflow-visible border-2 border-primary-glow/30 hover:border-primary-glow/60 mx-3"
                 >
-                  <MessageCircle size={18} className="text-primary-glow group-hover:scale-110 transition-transform duration-300" />
-                  <span className="font-semibold">Join Community</span>
+                  {/* Enhanced Pulse Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary-glow to-primary-light rounded-xl animate-pulse opacity-50"></div>
+                  
+                  {/* Glowing Border Effect */}
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-glow via-primary-light to-primary-glow rounded-xl opacity-30 blur-sm group-hover:opacity-60 transition-opacity duration-300 animate-pulse"></div>
+                  
+                  {/* Sparkle Icon */}
+                  <Sparkles size={16} className="relative z-10 text-bg-primary animate-pulse group-hover:rotate-180 transition-transform duration-500" />
+                  
+                  <span className="relative z-10">DeAI Handbook</span>
+                  
+                  {/* NEW Badge */}
+                  <span className="absolute -top-2 -right-2 bg-gradient-to-r from-red-500 to-orange-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-lg animate-bounce z-20 border border-white/30">
+                    NEW
+                  </span>
                 </a>
               </div>
             </div>

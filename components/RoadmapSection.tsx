@@ -1,6 +1,6 @@
 'use client'
 
-import { Calendar, Clock, CheckCircle, ArrowDown } from 'lucide-react'
+import { Calendar, Clock, CheckCircle, ArrowDown, Github, BookOpen, ArrowRight } from 'lucide-react'
 
 export default function RoadmapSection() {
   return (
@@ -172,6 +172,37 @@ export default function RoadmapSection() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* CTA Section */}
+        <div className="mt-20 text-center">
+          <div className="bg-gradient-to-r from-primary-glow/20 via-primary-light/20 to-primary-glow/20 rounded-3xl p-12 border border-primary-glow/30 hover:border-primary-glow/50 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-glow/20">
+            <div className="flex justify-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-r from-primary-glow to-primary-light rounded-full flex items-center justify-center">
+                <BookOpen className="w-8 h-8 text-bg-primary" />
+              </div>
+            </div>
+            
+            <h3 className="text-3xl font-bold text-text-primary mb-4 font-display">
+              📚 Explore DeAI
+            </h3>
+            <p className="text-lg text-text-secondary mb-6 max-w-2xl mx-auto">
+              The first Chinese-speaking DeAI guidance. From code to career. Learn everything about decentralized AI in our comprehensive beginner's handbook.
+            </p>
+            
+            <a 
+              href="https://github.com/CryptotimeDeveloperCommunity/DeAI" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group inline-flex items-center space-x-3 bg-gradient-to-r from-primary-glow to-primary-light rounded-3xl px-10 py-5 text-bg-primary hover:from-primary-light hover:to-primary-glow transition-all duration-300 hover:scale-105 font-semibold text-lg shadow-lg relative overflow-hidden"
+            >
+              {/* Button Pulse Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary-glow to-primary-light rounded-3xl animate-pulse opacity-50"></div>
+              <Github size={20} className="relative z-10 group-hover:rotate-12 transition-transform duration-300" />
+              <span className="relative z-10">View DeAI Handbook</span>
+              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
+            </a>
           </div>
         </div>
 
