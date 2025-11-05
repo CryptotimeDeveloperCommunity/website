@@ -176,56 +176,64 @@ export default function VisionSection() {
 
           {/* Layer 4: Commitment - Horizontal Layout */}
           <div className="group relative">
-            <div className="bg-gradient-to-br from-primary-glow/15 via-primary-light/10 to-primary-glow/15 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 border border-primary-glow/20 hover:border-primary-glow/40 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-glow/20">
-              <div className="flex flex-col md:flex-row items-center md:items-start gap-6 sm:gap-8 mb-6 sm:mb-8">
+            <div className="bg-gradient-to-br from-primary-glow/15 via-primary-light/10 to-primary-glow/15 rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 lg:p-10 border border-primary-glow/20 hover:border-primary-glow/40 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-glow/20">
+              {/* Header Section - Mobile Optimized */}
+              <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 md:mb-8">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary-glow/30 to-primary-light/30 rounded-xl sm:rounded-2xl flex items-center justify-center">
-                    <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-primary-glow" />
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-gradient-to-br from-primary-glow/30 to-primary-light/30 rounded-xl sm:rounded-2xl flex items-center justify-center">
+                    <Heart className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-primary-glow" />
                   </div>
                 </div>
-                <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-2xl sm:text-3xl font-bold text-text-primary mb-3 sm:mb-4">Our Commitment</h3>
-                  <p className="text-base sm:text-lg md:text-xl text-text-primary leading-relaxed px-2 md:px-0">
-                    Accompanying you from your
-                    <span className="text-primary-glow font-bold"> first line of code </span>
-                    to your
-                    <span className="text-primary-glow font-bold"> first <span className="text-primary-glow">AI + Web3</span> project </span>
-                    , from
-                    <span className="text-primary-glow font-bold"> independent developer </span>
-                    to
-                    <span className="text-primary-glow font-bold"> ecosystem builder</span>
-                    .
-                  </p>
+                <div className="flex-1">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-text-primary leading-tight">Our Commitment</h3>
                 </div>
               </div>
               
-              {/* Journey Visualization - Enhanced */}
-              <div className="relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-primary-glow/30 to-transparent hidden md:block"></div>
+              {/* Commitment Text */}
+              <div className="mb-5 sm:mb-6 md:mb-8">
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-text-primary leading-relaxed">
+                  Accompanying you from your
+                  <span className="text-primary-glow font-bold"> first line of code </span>
+                  to your
+                  <span className="text-primary-glow font-bold"> first <span className="text-primary-glow">AI + Web3</span> project </span>
+                  , from
+                  <span className="text-primary-glow font-bold"> independent developer </span>
+                  to
+                  <span className="text-primary-glow font-bold"> ecosystem builder</span>
+                  .
+                </p>
+              </div>
+              
+              {/* Journey Visualization - Mobile Optimized */}
+              <div className="relative pt-4 sm:pt-6 border-t border-primary-glow/20">
+                {/* Desktop: Horizontal line */}
+                <div className="absolute inset-0 top-1/2 hidden md:block">
+                  <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-primary-glow/30 to-transparent"></div>
                 </div>
-                <div className="flex flex-col md:flex-row justify-center items-center gap-4 sm:gap-6 md:gap-8 relative">
-                  <div className="text-center">
-                    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary-glow/30 to-primary-light/30 rounded-full flex items-center justify-center mb-2 sm:mb-3 shadow-lg">
-                      <Code className="w-8 h-8 sm:w-10 sm:h-10 text-primary-glow" />
+                
+                {/* Mobile: Compact vertical layout */}
+                <div className="flex md:flex-row flex-col justify-center items-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 relative">
+                  <div className="text-center flex-1 max-w-[120px] sm:max-w-none">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-primary-glow/30 to-primary-light/30 rounded-full flex items-center justify-center mb-1.5 sm:mb-2 md:mb-3 shadow-lg mx-auto">
+                      <Code className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 text-primary-glow" />
                     </div>
                     <div className="text-xs sm:text-sm font-semibold text-text-primary">First Code</div>
                   </div>
                   
-                  <ArrowRight className="w-6 h-6 sm:w-8 sm:h-8 text-primary-glow rotate-90 md:rotate-0" />
+                  <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-primary-glow rotate-90 md:rotate-0 flex-shrink-0 my-1 md:my-0" />
                   
-                  <div className="text-center">
-                    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary-glow/30 to-primary-light/30 rounded-full flex items-center justify-center mb-2 sm:mb-3 shadow-lg">
-                      <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-primary-glow" />
+                  <div className="text-center flex-1 max-w-[120px] sm:max-w-none">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-primary-glow/30 to-primary-light/30 rounded-full flex items-center justify-center mb-1.5 sm:mb-2 md:mb-3 shadow-lg mx-auto">
+                      <Zap className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 text-primary-glow" />
                     </div>
                     <div className="text-xs sm:text-sm font-semibold text-text-primary">First Project</div>
                   </div>
                   
-                  <ArrowRight className="w-6 h-6 sm:w-8 sm:h-8 text-primary-glow rotate-90 md:rotate-0" />
+                  <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-primary-glow rotate-90 md:rotate-0 flex-shrink-0 my-1 md:my-0" />
                   
-                  <div className="text-center">
-                    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary-glow/30 to-primary-light/30 rounded-full flex items-center justify-center mb-2 sm:mb-3 shadow-lg">
-                      <Users className="w-8 h-8 sm:w-10 sm:h-10 text-primary-glow" />
+                  <div className="text-center flex-1 max-w-[120px] sm:max-w-none">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-primary-glow/30 to-primary-light/30 rounded-full flex items-center justify-center mb-1.5 sm:mb-2 md:mb-3 shadow-lg mx-auto">
+                      <Users className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 text-primary-glow" />
                     </div>
                     <div className="text-xs sm:text-sm font-semibold text-text-primary">Ecosystem Builder</div>
                   </div>

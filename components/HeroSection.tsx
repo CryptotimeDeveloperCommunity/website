@@ -57,14 +57,14 @@ export default function HeroSection() {
         </div>
         {/* Main Title */}
         <h1 
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-hero-title font-black text-text-primary mb-6 sm:mb-8 leading-tight cursor-default group font-orbitron tracking-wider flex flex-col items-center"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-hero-title font-black text-text-primary mb-6 sm:mb-8 leading-tight cursor-default group font-orbitron tracking-normal sm:tracking-wide md:tracking-wider flex flex-col md:flex-row md:flex-wrap md:justify-center items-center gap-2 md:gap-3 px-2"
           style={{
             fontFamily: 'var(--font-orbitron)',
             textShadow: '0 0 10px rgba(255, 165, 0, 0.3), 0 0 20px rgba(255, 165, 0, 0.2), 0 0 30px rgba(255, 165, 0, 0.1)',
             WebkitTextStroke: '1px rgba(255, 165, 0, 0.2)'
           }}
         >
-          <div className="relative inline-block transition-all duration-500 group-hover:scale-105 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary-glow group-hover:via-primary-light group-hover:to-primary-glow group-hover:drop-shadow-[0_0_30px_rgba(255,165,0,0.8)] group-hover:tracking-widest">
+          <div className="relative inline-block transition-all duration-500 group-hover:scale-105 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary-glow group-hover:via-primary-light group-hover:to-primary-glow md:group-hover:tracking-widest">
             CryptoTime
             {/* Sci-fi glow effect overlay */}
             <div className="absolute inset-0 text-primary-glow opacity-0 group-hover:opacity-40 transition-opacity duration-500 blur-sm -z-10 font-orbitron">
@@ -75,7 +75,7 @@ export default function HeroSection() {
               <div className="absolute inset-0 border-2 border-primary-glow rounded-lg blur-sm"></div>
             </div>
           </div>
-          <div className="relative inline-block transition-all duration-500 group-hover:scale-105 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary-light group-hover:via-primary-glow group-hover:to-primary-light group-hover:drop-shadow-[0_0_30px_rgba(255,165,0,0.8)] group-hover:rotate-1 group-hover:tracking-widest whitespace-nowrap">
+          <div className="relative inline-block transition-all duration-500 group-hover:scale-105 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary-light group-hover:via-primary-glow group-hover:to-primary-light md:group-hover:drop-shadow-[0_0_30px_rgba(255,165,0,0.8)] md:group-hover:rotate-1 md:group-hover:tracking-widest whitespace-nowrap">
             Developer Community
             {/* Sci-fi glow effect overlay */}
             <div className="absolute inset-0 text-primary-light opacity-0 group-hover:opacity-40 transition-opacity duration-500 blur-sm -z-10 font-orbitron">
@@ -90,42 +90,42 @@ export default function HeroSection() {
 
         {/* Subtitle */}
         <div className="mb-8 sm:mb-10 space-y-2 sm:space-y-3">
-          <p className="text-lg sm:text-xl md:text-2xl text-text-primary font-semibold hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide px-2">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-text-primary font-semibold hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide px-2 sm:px-4">
             <span className="text-primary-glow font-bold">AI</span> + <span className="text-primary-glow font-bold">Web3</span> Developer Community for Chinese Speakers
           </p>
-          <p className="text-base sm:text-lg text-text-secondary hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide px-2">
+          <p className="text-sm sm:text-base md:text-lg text-text-secondary hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide px-2 sm:px-4">
             Bridging AI Innovation with Web3 Technology
           </p>
-          <p className="text-sm sm:text-base text-text-secondary/80 hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide px-2">
+          <p className="text-xs sm:text-sm md:text-base text-text-secondary/80 hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide px-2 sm:px-4">
             Collaborative Learning × Open Collaboration | From Code to Career
           </p>
         </div>
 
         {/* CTA Button */}
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-6 sm:px-4">
           <a 
             href="https://github.com/CryptotimeDeveloperCommunity" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="group w-full sm:w-auto flex items-center justify-center space-x-2 sm:space-x-3 bg-bg-primary border border-text-primary/30 rounded-2xl sm:rounded-3xl px-6 sm:px-10 py-3 sm:py-5 text-text-primary hover:bg-text-primary/10 transition-all duration-300 hover:border-primary-highlight/50 hover:scale-105 font-semibold text-base sm:text-lg relative overflow-hidden"
+            className="group w-full max-w-sm sm:w-auto flex items-center justify-center space-x-2 sm:space-x-3 bg-bg-primary border border-text-primary/30 rounded-2xl sm:rounded-3xl px-5 sm:px-6 md:px-10 py-3 sm:py-4 md:py-5 text-text-primary hover:bg-text-primary/10 transition-all duration-300 hover:border-primary-highlight/50 hover:scale-105 font-semibold text-sm sm:text-base md:text-lg relative overflow-hidden"
           >
             {/* Button Glow Effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-primary-glow/10 to-primary-light/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <Github size={18} className="sm:w-5 sm:h-5 relative z-10 group-hover:rotate-12 transition-transform duration-300" />
+            <Github size={16} className="sm:w-[18px] sm:h-[18px] md:w-5 md:h-5 relative z-10 group-hover:rotate-12 transition-transform duration-300" />
             <span className="relative z-10">GitHub</span>
-            <ArrowRight size={14} className="sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
+            <ArrowRight size={12} className="sm:w-[14px] sm:h-[14px] md:w-4 md:h-4 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
           </a>
           
           <a 
             href="https://t.me/zhoumo_828" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="group w-full sm:w-auto flex items-center justify-center space-x-2 sm:space-x-3 bg-gradient-to-r from-primary-glow to-primary-light rounded-2xl sm:rounded-3xl px-6 sm:px-10 py-3 sm:py-5 text-bg-primary hover:from-primary-light hover:to-primary-glow transition-all duration-300 hover:scale-105 font-semibold text-base sm:text-lg shadow-lg relative overflow-hidden"
+            className="group w-full max-w-sm sm:w-auto flex items-center justify-center space-x-2 sm:space-x-3 bg-gradient-to-r from-primary-glow to-primary-light rounded-2xl sm:rounded-3xl px-5 sm:px-6 md:px-10 py-3 sm:py-4 md:py-5 text-bg-primary hover:from-primary-light hover:to-primary-glow transition-all duration-300 hover:scale-105 font-semibold text-sm sm:text-base md:text-lg shadow-lg relative overflow-hidden"
           >
             {/* Button Pulse Effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-primary-glow to-primary-light rounded-2xl sm:rounded-3xl animate-pulse opacity-50"></div>
             <span className="relative z-10">Join Community</span>
-            <ArrowRight size={14} className="sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
+            <ArrowRight size={12} className="sm:w-[14px] sm:h-[14px] md:w-4 md:h-4 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
           </a>
         </div>
 
