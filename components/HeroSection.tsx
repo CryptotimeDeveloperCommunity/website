@@ -38,7 +38,7 @@ export default function HeroSection() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto pt-20 sm:pt-0">
         {/* Floating particles around title */}
         <div className="absolute inset-0 pointer-events-none">
           {[...Array(8)].map((_, i) => (
@@ -57,7 +57,7 @@ export default function HeroSection() {
         </div>
         {/* Main Title */}
         <h1 
-          className="text-hero-title font-black text-text-primary mb-8 leading-tight cursor-default group font-orbitron tracking-wider flex flex-col items-center"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-hero-title font-black text-text-primary mb-6 sm:mb-8 leading-tight cursor-default group font-orbitron tracking-wider flex flex-col items-center"
           style={{
             fontFamily: 'var(--font-orbitron)',
             textShadow: '0 0 10px rgba(255, 165, 0, 0.3), 0 0 20px rgba(255, 165, 0, 0.2), 0 0 30px rgba(255, 165, 0, 0.1)',
@@ -89,43 +89,43 @@ export default function HeroSection() {
         </h1>
 
         {/* Subtitle */}
-        <div className="mb-10 space-y-3">
-          <p className="text-hero-subtitle text-text-primary font-semibold hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide">
+        <div className="mb-8 sm:mb-10 space-y-2 sm:space-y-3">
+          <p className="text-lg sm:text-xl md:text-2xl text-text-primary font-semibold hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide px-2">
             <span className="text-primary-glow font-bold">AI</span> + <span className="text-primary-glow font-bold">Web3</span> Developer Community for Chinese Speakers
           </p>
-          <p className="text-hero-description text-text-secondary hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide">
+          <p className="text-base sm:text-lg text-text-secondary hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide px-2">
             Bridging AI Innovation with Web3 Technology
           </p>
-          <p className="text-base text-text-secondary/80 hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide">
+          <p className="text-sm sm:text-base text-text-secondary/80 hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide px-2">
             Collaborative Learning × Open Collaboration | From Code to Career
           </p>
         </div>
 
         {/* CTA Button */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4">
           <a 
             href="https://github.com/CryptotimeDeveloperCommunity" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="group flex items-center space-x-3 bg-bg-primary border border-text-primary/30 rounded-3xl px-10 py-5 text-text-primary hover:bg-text-primary/10 transition-all duration-300 hover:border-primary-highlight/50 hover:scale-105 font-semibold text-lg relative overflow-hidden"
+            className="group w-full sm:w-auto flex items-center justify-center space-x-2 sm:space-x-3 bg-bg-primary border border-text-primary/30 rounded-2xl sm:rounded-3xl px-6 sm:px-10 py-3 sm:py-5 text-text-primary hover:bg-text-primary/10 transition-all duration-300 hover:border-primary-highlight/50 hover:scale-105 font-semibold text-base sm:text-lg relative overflow-hidden"
           >
             {/* Button Glow Effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-primary-glow/10 to-primary-light/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <Github size={20} className="relative z-10 group-hover:rotate-12 transition-transform duration-300" />
+            <Github size={18} className="sm:w-5 sm:h-5 relative z-10 group-hover:rotate-12 transition-transform duration-300" />
             <span className="relative z-10">GitHub</span>
-            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
+            <ArrowRight size={14} className="sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
           </a>
           
           <a 
             href="https://t.me/zhoumo_828" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="group flex items-center space-x-3 bg-gradient-to-r from-primary-glow to-primary-light rounded-3xl px-10 py-5 text-bg-primary hover:from-primary-light hover:to-primary-glow transition-all duration-300 hover:scale-105 font-semibold text-lg shadow-lg relative overflow-hidden"
+            className="group w-full sm:w-auto flex items-center justify-center space-x-2 sm:space-x-3 bg-gradient-to-r from-primary-glow to-primary-light rounded-2xl sm:rounded-3xl px-6 sm:px-10 py-3 sm:py-5 text-bg-primary hover:from-primary-light hover:to-primary-glow transition-all duration-300 hover:scale-105 font-semibold text-base sm:text-lg shadow-lg relative overflow-hidden"
           >
             {/* Button Pulse Effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-primary-glow to-primary-light rounded-3xl animate-pulse opacity-50"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-primary-glow to-primary-light rounded-2xl sm:rounded-3xl animate-pulse opacity-50"></div>
             <span className="relative z-10">Join Community</span>
-            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
+            <ArrowRight size={14} className="sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
           </a>
         </div>
 

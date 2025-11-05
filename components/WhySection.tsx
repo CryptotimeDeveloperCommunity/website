@@ -1,6 +1,7 @@
 'use client'
 
 import { Brain, Users, Network, Target } from 'lucide-react'
+import ScrollAnimation from './ScrollAnimation'
 
 export default function WhySection() {
   return (
@@ -31,8 +32,8 @@ export default function WhySection() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6 font-orbitron tracking-wide" style={{
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary mb-4 sm:mb-6 font-orbitron tracking-wide px-2" style={{
             textShadow: '0 0 10px rgba(255, 165, 0, 0.2)',
             WebkitTextStroke: '0.5px rgba(255, 165, 0, 0.1)'
           }}>
@@ -44,17 +45,18 @@ export default function WhySection() {
         </div>
 
         {/* Pain Points Grid */}
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
           {/* Pain Point 1: AI Learning */}
-          <div className="group relative flex flex-col">
-            <div className="bg-bg-secondary/50 backdrop-blur-sm rounded-2xl p-8 border border-text-primary/10 hover:border-primary-glow/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-primary-glow/10 flex flex-col h-full">
+          <ScrollAnimation animation="fade-in-up" delay={0}>
+            <div className="group relative flex flex-col">
+              <div className="bg-bg-secondary/50 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-text-primary/10 hover:border-primary-glow/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-primary-glow/10 flex flex-col h-full">
               {/* Icon */}
-              <div className="flex items-center justify-center w-16 h-16 bg-primary-glow/10 rounded-xl mb-4 group-hover:bg-primary-glow/20 transition-colors">
-                <Brain className="w-8 h-8 text-primary-glow" />
+              <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-primary-glow/10 rounded-xl mb-3 sm:mb-4 group-hover:bg-primary-glow/20 transition-colors">
+                <Brain className="w-6 h-6 sm:w-8 sm:h-8 text-primary-glow" />
               </div>
               
               {/* Title */}
-              <h3 className="text-2xl font-bold text-text-primary mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-text-primary mb-3 sm:mb-4">
                 <span className="text-primary-glow">AI + Web3</span> learning revolution
               </h3>
               
@@ -85,19 +87,21 @@ export default function WhySection() {
                   </div>
                 </div>
               </div>
+              </div>
             </div>
-          </div>
+          </ScrollAnimation>
 
           {/* Pain Point 2: Talent Mismatch */}
-          <div className="group relative flex flex-col">
-            <div className="bg-bg-secondary/50 backdrop-blur-sm rounded-2xl p-8 border border-text-primary/10 hover:border-primary-glow/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-primary-glow/10 flex flex-col h-full">
+          <ScrollAnimation animation="fade-in-up" delay={100}>
+            <div className="group relative flex flex-col">
+              <div className="bg-bg-secondary/50 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-text-primary/10 hover:border-primary-glow/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-primary-glow/10 flex flex-col h-full">
               {/* Icon */}
-              <div className="flex items-center justify-center w-16 h-16 bg-primary-glow/10 rounded-xl mb-4 group-hover:bg-primary-glow/20 transition-colors">
-                <Target className="w-8 h-8 text-primary-glow" />
+              <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-primary-glow/10 rounded-xl mb-3 sm:mb-4 group-hover:bg-primary-glow/20 transition-colors">
+                <Target className="w-6 h-6 sm:w-8 sm:h-8 text-primary-glow" />
               </div>
               
               {/* Title */}
-              <h3 className="text-2xl font-bold text-text-primary mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-text-primary mb-3 sm:mb-4">
                 Talent-opportunity mismatch
               </h3>
               
@@ -128,19 +132,21 @@ export default function WhySection() {
                   </div>
                 </div>
               </div>
+              </div>
             </div>
-          </div>
+          </ScrollAnimation>
 
           {/* Pain Point 3: Creator Network */}
-          <div className="group relative flex flex-col">
-            <div className="bg-bg-secondary/50 backdrop-blur-sm rounded-2xl p-8 border border-text-primary/10 hover:border-primary-glow/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-primary-glow/10 flex flex-col h-full">
+          <ScrollAnimation animation="fade-in-up" delay={200}>
+            <div className="group relative flex flex-col">
+              <div className="bg-bg-secondary/50 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-text-primary/10 hover:border-primary-glow/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-primary-glow/10 flex flex-col h-full">
               {/* Icon */}
-              <div className="flex items-center justify-center w-16 h-16 bg-primary-glow/10 rounded-xl mb-4 group-hover:bg-primary-glow/20 transition-colors">
-                <Network className="w-8 h-8 text-primary-glow" />
+              <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-primary-glow/10 rounded-xl mb-3 sm:mb-4 group-hover:bg-primary-glow/20 transition-colors">
+                <Network className="w-6 h-6 sm:w-8 sm:h-8 text-primary-glow" />
               </div>
               
               {/* Title */}
-              <h3 className="text-2xl font-bold text-text-primary mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-text-primary mb-3 sm:mb-4">
                 Need for open creator network
               </h3>
               
@@ -171,8 +177,9 @@ export default function WhySection() {
                   </div>
                 </div>
               </div>
+              </div>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
 
       </div>

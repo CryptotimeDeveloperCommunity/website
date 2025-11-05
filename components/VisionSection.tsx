@@ -1,6 +1,6 @@
 'use client'
 
-import { Globe, Target, Users, Heart, ArrowDown, ArrowRight, Code, Zap, BookOpen } from 'lucide-react'
+import { Globe, Target, Users, Heart, ArrowDown, ArrowRight, Code, Zap, BookOpen, Github } from 'lucide-react'
 
 export default function VisionSection() {
   return (
@@ -34,8 +34,8 @@ export default function VisionSection() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6 font-orbitron tracking-wide" style={{
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-primary mb-4 sm:mb-6 font-orbitron tracking-wide" style={{
             textShadow: '0 0 10px rgba(255, 165, 0, 0.2)',
             WebkitTextStroke: '0.5px rgba(255, 165, 0, 0.1)'
           }}>
@@ -45,166 +45,196 @@ export default function VisionSection() {
         </div>
 
         {/* Vision Pyramid */}
-        <div className="space-y-8">
-          {/* Layer 1: Core Vision */}
+        <div className="space-y-8 sm:space-y-12">
+          {/* Layer 1: Core Vision - Full Width Card with DeAI CTA */}
           <div className="group relative">
-            <div className="bg-gradient-to-r from-primary-glow/20 to-primary-light/20 rounded-3xl p-8 border border-primary-glow/30 hover:border-primary-glow/50 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-glow/20">
-              <div className="flex items-center justify-center mb-6">
-                <Globe className="w-12 h-12 text-primary-glow mr-4" />
-                <h3 className="text-3xl font-bold text-text-primary">Core Vision</h3>
-              </div>
+            <div className="bg-gradient-to-r from-primary-glow/20 to-primary-light/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 border border-primary-glow/30 hover:border-primary-glow/50 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-glow/20 relative overflow-hidden">
+              {/* Decorative background elements */}
+              <div className="absolute top-0 right-0 w-40 h-40 bg-primary-glow/5 rounded-full blur-3xl"></div>
+              <div className="absolute bottom-0 left-0 w-32 h-32 bg-primary-light/5 rounded-full blur-3xl"></div>
               
-              <div className="text-center max-w-4xl mx-auto">
-                <p className="text-xl text-text-primary leading-relaxed font-medium">
-                  Build an
-                  <span className="text-primary-glow font-bold"> open and collaborative </span>
-                  <span className="text-primary-glow font-bold">AI + Web3</span> developer community, believing that
-                  <span className="text-primary-glow font-bold"> AI + Web3 </span>
-                  can enable everyone to participate in the future of technology.
-                </p>
-              </div>
-              
-              {/* Decorative Arrow */}
-              <div className="flex justify-center mt-8">
-                <ArrowDown className="w-6 h-6 text-primary-glow animate-bounce" />
+              <div className="relative z-10">
+                <div className="flex items-center justify-center mb-4 sm:mb-6 gap-2 sm:gap-4">
+                  <Globe className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-primary-glow" />
+                  <h3 className="text-2xl sm:text-3xl font-bold text-text-primary">Core Vision</h3>
+                </div>
+                
+                <div className="text-center max-w-4xl mx-auto mb-6 sm:mb-8">
+                  <p className="text-base sm:text-lg md:text-xl text-text-primary leading-relaxed font-medium px-2">
+                    Build an
+                    <span className="text-primary-glow font-bold"> open and collaborative </span>
+                    <span className="text-primary-glow font-bold">AI + Web3</span> developer community, believing that
+                    <span className="text-primary-glow font-bold"> AI + Web3 </span>
+                    can enable everyone to participate in the future of technology.
+                  </p>
+                </div>
+                
+                {/* DeAI CTA Section */}
+                <div className="mt-6 sm:mt-8 md:mt-10 pt-6 sm:pt-8 border-t border-primary-glow/20">
+                  <div className="flex flex-col items-center gap-4 sm:gap-6 md:flex-row md:justify-center md:gap-8">
+                    <div className="flex items-center gap-3 w-full sm:w-auto justify-center md:justify-start">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary-glow/30 to-primary-light/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <BookOpen className="w-5 h-5 sm:w-6 sm:h-6 text-primary-glow" />
+                      </div>
+                      <div className="text-left">
+                        <div className="text-xs sm:text-sm font-semibold text-primary-glow mb-1">📚 Start Learning</div>
+                        <div className="text-xs text-text-secondary hidden sm:block">The first Chinese-speaking DeAI guidance</div>
+                      </div>
+                    </div>
+                    
+                    <a 
+                      href="https://github.com/CryptotimeDeveloperCommunity/DeAI" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="group w-full sm:w-auto inline-flex items-center justify-center space-x-2 sm:space-x-3 bg-gradient-to-r from-primary-glow to-primary-light rounded-xl sm:rounded-2xl px-6 sm:px-8 py-3 sm:py-4 text-bg-primary hover:from-primary-light hover:to-primary-glow transition-all duration-300 hover:scale-105 font-semibold text-sm sm:text-base shadow-lg relative overflow-hidden"
+                    >
+                      {/* Button Pulse Effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-glow to-primary-light rounded-xl sm:rounded-2xl animate-pulse opacity-50"></div>
+                      <Github size={16} className="sm:w-[18px] sm:h-[18px] relative z-10 group-hover:rotate-12 transition-transform duration-300" />
+                      <span className="relative z-10">View DeAI Handbook</span>
+                      <ArrowRight size={12} className="sm:w-[14px] sm:h-[14px] group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
+                    </a>
+                  </div>
+                </div>
+                
+                {/* Decorative Arrow */}
+                <div className="flex justify-center mt-6 sm:mt-8">
+                  <ArrowDown className="w-5 h-5 sm:w-6 sm:h-6 text-primary-glow animate-bounce" />
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Layer 2: Specific Goals */}
-          <div className="group relative">
-            <div className="bg-gradient-to-r from-bg-primary/80 to-bg-primary/60 rounded-3xl p-8 border border-text-primary/20 hover:border-primary-glow/30 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-glow/10">
-              <div className="flex items-center justify-center mb-6">
-                <Target className="w-12 h-12 text-primary-glow mr-4" />
-                <h3 className="text-3xl font-bold text-text-primary">Specific Goals</h3>
+          {/* Layer 2: Specific Goals - Split Layout for Visual Variety */}
+          <div className="grid md:grid-cols-5 gap-4 sm:gap-6 items-start md:items-center">
+            <div className="md:col-span-2 flex flex-row items-center gap-3 sm:gap-4 mb-4 md:mb-0">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary-glow/30 to-primary-light/30 rounded-xl sm:rounded-2xl flex items-center justify-center flex-shrink-0">
+                <Target className="w-8 h-8 sm:w-10 sm:h-10 text-primary-glow" />
               </div>
-              
-              <div className="text-center max-w-4xl mx-auto">
-                <p className="text-xl text-text-primary leading-relaxed font-medium">
+              <h3 className="text-2xl sm:text-3xl font-bold text-text-primary">Specific Goals</h3>
+            </div>
+            <div className="md:col-span-3">
+              <div className="bg-gradient-to-r from-bg-primary/60 to-bg-primary/40 rounded-xl sm:rounded-2xl p-4 sm:p-6 border-l-4 border-primary-glow">
+                <p className="text-base sm:text-lg text-text-primary leading-relaxed">
                   Become one of the
                   <span className="text-primary-glow font-bold"> most active </span>
                   <span className="text-primary-glow font-bold">AI + Web3</span> developer networks, supplying
-                  <span className="text-primary-glow font-bold text-2xl"> 500+ </span>
+                  <span className="text-primary-glow font-bold text-xl sm:text-2xl"> 500+ </span>
                   developer talents to major ecosystems
                 </p>
-              </div>
-              
-              
-              {/* Decorative Arrow */}
-              <div className="flex justify-center mt-8">
-                <ArrowDown className="w-6 h-6 text-primary-glow animate-bounce" />
               </div>
             </div>
           </div>
 
-          {/* Layer 3: Inclusivity */}
+          {/* Visual Separator */}
+          <div className="flex justify-center py-3 sm:py-4">
+            <div className="w-24 h-1 bg-gradient-to-r from-transparent via-primary-glow to-transparent"></div>
+          </div>
+
+          {/* Layer 3: Inclusivity - Card with Grid */}
           <div className="group relative">
-            <div className="bg-gradient-to-r from-primary-glow/10 to-primary-light/10 rounded-3xl p-8 border border-text-primary/10 hover:border-primary-glow/30 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-glow/10">
-              <div className="flex items-center justify-center mb-6">
-                <Users className="w-12 h-12 text-primary-glow mr-4" />
-                <h3 className="text-3xl font-bold text-text-primary">Inclusivity</h3>
+            <div className="bg-gradient-to-r from-primary-glow/10 to-primary-light/10 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-text-primary/10 hover:border-primary-glow/30 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-glow/10">
+              <div className="flex items-center justify-center mb-4 sm:mb-6 gap-2 sm:gap-4">
+                <Users className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-primary-glow" />
+                <h3 className="text-2xl sm:text-3xl font-bold text-text-primary">Inclusivity</h3>
               </div>
               
-              <div className="text-center max-w-4xl mx-auto mb-8">
-                <p className="text-xl text-text-primary leading-relaxed font-medium">
+              <div className="text-center max-w-4xl mx-auto mb-6 sm:mb-8">
+                <p className="text-base sm:text-lg md:text-xl text-text-primary leading-relaxed font-medium px-2">
                   Whether you're a traditional developer wanting to transition to <span className="text-primary-glow font-bold">AI + Web3</span>, an explorer interested in emerging tech, or a creator hoping to express innovation through technology—
                   <span className="text-primary-glow font-bold"> there's a place for you here.</span>
                 </p>
               </div>
               
               {/* User Types */}
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-bg-primary/50 rounded-2xl p-6 border border-text-primary/10">
-                  <Code className="w-8 h-8 text-primary-glow mx-auto mb-4" />
-                  <h4 className="text-lg font-bold text-text-primary mb-2">Traditional Developers</h4>
-                  <p className="text-text-secondary text-sm">Transitioning to <span className="text-primary-glow">AI + Web3</span></p>
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                <div className="bg-bg-primary/50 rounded-xl sm:rounded-2xl p-5 sm:p-6 border border-text-primary/10 hover:border-primary-glow/30 transition-all duration-300">
+                  <Code className="w-7 h-7 sm:w-8 sm:h-8 text-primary-glow mx-auto mb-3 sm:mb-4" />
+                  <h4 className="text-base sm:text-lg font-bold text-text-primary mb-2">Traditional Developers</h4>
+                  <p className="text-text-secondary text-xs sm:text-sm">Transitioning to <span className="text-primary-glow">AI + Web3</span></p>
                 </div>
                 
-                <div className="bg-bg-primary/50 rounded-2xl p-6 border border-text-primary/10">
-                  <Zap className="w-8 h-8 text-primary-glow mx-auto mb-4" />
-                  <h4 className="text-lg font-bold text-text-primary mb-2">Explorers</h4>
-                  <p className="text-text-secondary text-sm">Interested in emerging tech</p>
+                <div className="bg-bg-primary/50 rounded-xl sm:rounded-2xl p-5 sm:p-6 border border-text-primary/10 hover:border-primary-glow/30 transition-all duration-300">
+                  <Zap className="w-7 h-7 sm:w-8 sm:h-8 text-primary-glow mx-auto mb-3 sm:mb-4" />
+                  <h4 className="text-base sm:text-lg font-bold text-text-primary mb-2">Explorers</h4>
+                  <p className="text-text-secondary text-xs sm:text-sm">Interested in emerging tech</p>
                 </div>
                 
-                <div className="bg-bg-primary/50 rounded-2xl p-6 border border-text-primary/10">
-                  <BookOpen className="w-8 h-8 text-primary-glow mx-auto mb-4" />
-                  <h4 className="text-lg font-bold text-text-primary mb-2">Creators</h4>
-                  <p className="text-text-secondary text-sm">Expressing innovation through technology</p>
+                <div className="bg-bg-primary/50 rounded-xl sm:rounded-2xl p-5 sm:p-6 border border-text-primary/10 hover:border-primary-glow/30 transition-all duration-300 sm:col-span-2 md:col-span-1">
+                  <BookOpen className="w-7 h-7 sm:w-8 sm:h-8 text-primary-glow mx-auto mb-3 sm:mb-4" />
+                  <h4 className="text-base sm:text-lg font-bold text-text-primary mb-2">Creators</h4>
+                  <p className="text-text-secondary text-xs sm:text-sm">Expressing innovation through technology</p>
                 </div>
-              </div>
-              
-              {/* Decorative Arrow */}
-              <div className="flex justify-center mt-8">
-                <ArrowDown className="w-6 h-6 text-primary-glow animate-bounce" />
               </div>
             </div>
           </div>
 
-          {/* Layer 4: Commitment */}
+          {/* Visual Separator */}
+          <div className="flex justify-center py-3 sm:py-4">
+            <div className="w-24 h-1 bg-gradient-to-r from-transparent via-primary-glow to-transparent"></div>
+          </div>
+
+          {/* Layer 4: Commitment - Horizontal Layout */}
           <div className="group relative">
-            <div className="bg-gradient-to-r from-primary-glow/15 to-primary-light/15 rounded-3xl p-8 border border-primary-glow/20 hover:border-primary-glow/40 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-glow/20">
-              <div className="flex items-center justify-center mb-6">
-                <Heart className="w-12 h-12 text-primary-glow mr-4" />
-                <h3 className="text-3xl font-bold text-text-primary">Our Commitment</h3>
+            <div className="bg-gradient-to-br from-primary-glow/15 via-primary-light/10 to-primary-glow/15 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 border border-primary-glow/20 hover:border-primary-glow/40 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-glow/20">
+              <div className="flex flex-col md:flex-row items-center md:items-start gap-6 sm:gap-8 mb-6 sm:mb-8">
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary-glow/30 to-primary-light/30 rounded-xl sm:rounded-2xl flex items-center justify-center">
+                    <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-primary-glow" />
+                  </div>
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-text-primary mb-3 sm:mb-4">Our Commitment</h3>
+                  <p className="text-base sm:text-lg md:text-xl text-text-primary leading-relaxed px-2 md:px-0">
+                    Accompanying you from your
+                    <span className="text-primary-glow font-bold"> first line of code </span>
+                    to your
+                    <span className="text-primary-glow font-bold"> first <span className="text-primary-glow">AI + Web3</span> project </span>
+                    , from
+                    <span className="text-primary-glow font-bold"> independent developer </span>
+                    to
+                    <span className="text-primary-glow font-bold"> ecosystem builder</span>
+                    .
+                  </p>
+                </div>
               </div>
               
-              <div className="text-center max-w-4xl mx-auto">
-                <p className="text-2xl text-text-primary leading-relaxed font-bold">
-                  Accompanying you from your
-                  <span className="text-primary-glow"> first line of code </span>
-                  to your
-                  <span className="text-primary-glow"> first <span className="text-primary-glow">AI + Web3</span> project </span>
-                  , from
-                  <span className="text-primary-glow"> independent developer </span>
-                  to
-                  <span className="text-primary-glow"> ecosystem builder</span>
-                  .
-                </p>
-              </div>
-              
-              {/* Journey Visualization */}
-              <div className="flex justify-center items-center mt-8 space-x-4">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary-glow/20 rounded-full flex items-center justify-center mb-2">
-                    <Code className="w-8 h-8 text-primary-glow" />
-                  </div>
-                  <div className="text-sm text-text-secondary">First Code</div>
+              {/* Journey Visualization - Enhanced */}
+              <div className="relative">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-primary-glow/30 to-transparent hidden md:block"></div>
                 </div>
-                
-                <ArrowRight className="w-6 h-6 text-primary-glow" />
-                
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary-glow/20 rounded-full flex items-center justify-center mb-2">
-                    <Zap className="w-8 h-8 text-primary-glow" />
+                <div className="flex flex-col md:flex-row justify-center items-center gap-4 sm:gap-6 md:gap-8 relative">
+                  <div className="text-center">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary-glow/30 to-primary-light/30 rounded-full flex items-center justify-center mb-2 sm:mb-3 shadow-lg">
+                      <Code className="w-8 h-8 sm:w-10 sm:h-10 text-primary-glow" />
+                    </div>
+                    <div className="text-xs sm:text-sm font-semibold text-text-primary">First Code</div>
                   </div>
-                  <div className="text-sm text-text-secondary">First Project</div>
-                </div>
-                
-                <ArrowRight className="w-6 h-6 text-primary-glow" />
-                
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary-glow/20 rounded-full flex items-center justify-center mb-2">
-                    <Users className="w-8 h-8 text-primary-glow" />
+                  
+                  <ArrowRight className="w-6 h-6 sm:w-8 sm:h-8 text-primary-glow rotate-90 md:rotate-0" />
+                  
+                  <div className="text-center">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary-glow/30 to-primary-light/30 rounded-full flex items-center justify-center mb-2 sm:mb-3 shadow-lg">
+                      <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-primary-glow" />
+                    </div>
+                    <div className="text-xs sm:text-sm font-semibold text-text-primary">First Project</div>
                   </div>
-                  <div className="text-sm text-text-secondary">Ecosystem Builder</div>
+                  
+                  <ArrowRight className="w-6 h-6 sm:w-8 sm:h-8 text-primary-glow rotate-90 md:rotate-0" />
+                  
+                  <div className="text-center">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary-glow/30 to-primary-light/30 rounded-full flex items-center justify-center mb-2 sm:mb-3 shadow-lg">
+                      <Users className="w-8 h-8 sm:w-10 sm:h-10 text-primary-glow" />
+                    </div>
+                    <div className="text-xs sm:text-sm font-semibold text-text-primary">Ecosystem Builder</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <a 
-            href="https://t.me/zhoumo_828" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-flex items-center space-x-3 bg-primary-glow hover:bg-primary-light text-bg-primary rounded-2xl px-8 py-4 font-semibold text-lg transition-all duration-300 hover:scale-105 cursor-pointer group"
-          >
-            <span>Join Our Vision</span>
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </a>
-        </div>
       </div>
     </section>
   )

@@ -15,22 +15,22 @@ export default function FooterSection() {
     <footer className="bg-bg-secondary border-t border-text-primary/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
-        <div className="py-16">
-          <div className="grid md:grid-cols-4 gap-8">
+        <div className="py-10 sm:py-12 md:py-16">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
             {/* Brand Section */}
-            <div className="md:col-span-2">
-              <div className="flex items-center space-x-3 mb-6">
+            <div className="sm:col-span-2">
+              <div className="flex items-center space-x-3 mb-4 sm:mb-6">
                 <Image 
                   src="/logos/logo.png" 
                   alt="CryptoTime" 
                   width={150}
                   height={50}
-                  className="h-14 w-auto"
+                  className="h-10 sm:h-12 md:h-14 w-auto"
                   priority
                 />
               </div>
               
-              <p className="text-text-secondary leading-relaxed mb-6 max-w-md">
+              <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-4 sm:mb-6 max-w-md">
                 <span className="text-primary-glow">AI + Web3</span> developer community, building an open collaborative ecosystem for the future of technology.
               </p>
               

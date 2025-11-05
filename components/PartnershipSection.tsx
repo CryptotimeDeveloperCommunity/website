@@ -4,36 +4,36 @@ import { Users, Link, Briefcase, Award, Lightbulb, FileText } from 'lucide-react
 
 export default function PartnershipSection() {
   return (
-    <section className="py-20 bg-bg-secondary">
+    <section className="py-12 sm:py-16 md:py-20 bg-bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6 font-display">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-primary mb-4 sm:mb-6 font-display">
             🤝 Partnership
           </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-text-secondary max-w-3xl mx-auto px-2">
             Looking for like-minded partners to build the Web3 developer ecosystem together
           </p>
-          <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full mt-6"></div>
+          <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full mt-4 sm:mt-6"></div>
         </div>
 
         {/* Partnership Flow */}
-        <div className="relative mb-16 mt-8">
+        <div className="relative mb-10 sm:mb-16 mt-6 sm:mt-8">
           {/* Central Hub Design */}
           <div className="max-w-5xl mx-auto">
             {/* Central Hub */}
-            <div className="text-center mb-12">
-              <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-primary-glow to-primary-light rounded-full mb-6 border-4 border-primary-glow/30">
-                <Users className="w-12 h-12 text-bg-primary" />
+            <div className="text-center mb-8 sm:mb-12">
+              <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-gradient-to-br from-primary-glow to-primary-light rounded-full mb-4 sm:mb-6 border-4 border-primary-glow/30">
+                <Users className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-bg-primary" />
               </div>
-              <h3 className="text-3xl font-bold text-text-primary mb-4">Partnership Hub</h3>
-              <p className="text-xl text-text-secondary max-w-2xl mx-auto">
+              <h3 className="text-2xl sm:text-3xl font-bold text-text-primary mb-3 sm:mb-4">Partnership Hub</h3>
+              <p className="text-base sm:text-lg md:text-xl text-text-secondary max-w-2xl mx-auto px-2">
                 Building the <span className="text-primary-glow font-semibold">AI + Web3</span> ecosystem together
               </p>
             </div>
 
             {/* Partnership Flow */}
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
               {/* Left: What We Offer */}
               <div className="space-y-6">
                 <div className="text-center mb-8">
