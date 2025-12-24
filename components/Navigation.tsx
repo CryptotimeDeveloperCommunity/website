@@ -55,6 +55,16 @@ export default function Navigation() {
                     <span className="relative z-10">Roadmap</span>
                     <div className="absolute inset-0 bg-primary-glow/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg blur-sm -z-10"></div>
                   </a>
+                  <a 
+                    href="#tech-talks" 
+                    className="text-text-secondary hover:text-primary-glow transition-all duration-300 font-exo2 tracking-wide relative group"
+                    onClick={() => {
+                      document.getElementById('tech-talks')?.scrollIntoView({ behavior: 'smooth' })
+                    }}
+                  >
+                    <span className="relative z-10">Tech Talks</span>
+                    <div className="absolute inset-0 bg-primary-glow/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg blur-sm -z-10"></div>
+                  </a>
                 </div>
 
           {/* Right Side Actions */}
@@ -127,6 +137,16 @@ export default function Navigation() {
                 }}
               >
                 Roadmap
+              </a>
+              <a 
+                href="#tech-talks" 
+                className="block px-4 py-3 text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-all"
+                onClick={() => {
+                  document.getElementById('tech-talks')?.scrollIntoView({ behavior: 'smooth' })
+                  setIsMenuOpen(false)
+                }}
+              >
+                Tech Talks
               </a>
               <div className="border-t border-white/10 pt-3 mt-2">
                 <a 

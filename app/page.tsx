@@ -5,6 +5,7 @@ import TeamSection from '@/components/TeamSection'
 import ValueSection from '@/components/ValueSection'
 import VisionSection from '@/components/VisionSection'
 import RoadmapSection from '@/components/RoadmapSection'
+import TechTalksSection from '@/components/TechTalksSection'
 import PartnershipSection from '@/components/PartnershipSection'
 import FAQSection from '@/components/FAQSection'
 import FooterSection from '@/components/FooterSection'
@@ -19,6 +20,7 @@ export default function Home() {
       <ValueSection />
       <VisionSection />
       <RoadmapSection />
+      <TechTalksSection />
       <PartnershipSection />
       <FAQSection />
       <FooterSection />

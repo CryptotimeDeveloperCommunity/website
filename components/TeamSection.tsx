@@ -115,7 +115,7 @@ export default function TeamSection() {
               </h3>
               
               <p className="text-lg sm:text-xl md:text-2xl text-text-secondary leading-relaxed max-w-3xl mx-auto px-2">
-                Building the <span className="text-primary-glow font-semibold">most vibrant</span> <span className="text-primary-glow font-semibold">AI + Web3</span> developer network through <span className="text-primary-glow font-semibold">open collaboration</span>
+                Building the <span className="text-primary-glow font-semibold">most vibrant</span> <span className="text-primary-glow font-semibold">AI-driven cutting-edge tech</span> innovation community focused on <span className="text-primary-glow font-semibold">AI + Web3</span> through <span className="text-primary-glow font-semibold">open collaboration</span>
               </p>
             </div>
             </div>

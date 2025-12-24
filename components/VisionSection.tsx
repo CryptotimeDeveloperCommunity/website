@@ -62,9 +62,9 @@ export default function VisionSection() {
                 <div className="text-center max-w-4xl mx-auto mb-6 sm:mb-8">
                   <p className="text-base sm:text-lg md:text-xl text-text-primary leading-relaxed font-medium px-2">
                     Build an
-                    <span className="text-primary-glow font-bold"> open and collaborative </span>
-                    <span className="text-primary-glow font-bold">AI + Web3</span> developer community, believing that
-                    <span className="text-primary-glow font-bold"> AI + Web3 </span>
+                    <span className="text-primary-glow font-bold"> AI-driven cutting-edge tech innovation </span>
+                    community focused on <span className="text-primary-glow font-bold">AI + Web3</span>, believing that
+                    <span className="text-primary-glow font-bold"> open collaboration </span>
                     can enable everyone to participate in the future of technology.
                   </p>
                 </div>

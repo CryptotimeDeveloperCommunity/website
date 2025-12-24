@@ -31,7 +31,7 @@ export default function FooterSection() {
               </div>
               
               <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-4 sm:mb-6 max-w-md">
-                <span className="text-primary-glow">AI + Web3</span> developer community, building an open collaborative ecosystem for the future of technology.
+                <span className="text-primary-glow">AI-driven cutting-edge tech</span> innovation community focused on <span className="text-primary-glow">AI + Web3</span>, building an open collaborative ecosystem for the future of technology.
               </p>
               
               <div className="flex space-x-4">

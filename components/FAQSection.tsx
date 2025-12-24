@@ -47,7 +47,7 @@ export default function FAQSection() {
             ❓ Frequently Asked Questions
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-text-secondary max-w-3xl mx-auto px-2">
-            Answering your questions about CryptoTime Developer Community
+            Answering your questions about <span className="text-primary-glow font-semibold">CT (Cutting-edge Tech)</span> Developer Community
           </p>
           <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full mt-4 sm:mt-6"></div>
         </div>

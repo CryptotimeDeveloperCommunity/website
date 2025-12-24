@@ -61,7 +61,7 @@ export default function ValueSection() {
             What can you get by joining us?
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-text-secondary max-w-3xl mx-auto font-exo2 tracking-wide px-2">
-            We are building infrastructure for <span className="text-primary-glow font-bold">AI + Web3</span> creators
+            We are building infrastructure for <span className="text-primary-glow font-bold">AI-driven cutting-edge tech</span> innovation, focused on <span className="text-primary-glow font-bold">AI + Web3</span> creators
           </p>
           <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full mt-4 sm:mt-6"></div>
         </div>

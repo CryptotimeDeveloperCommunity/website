@@ -12,7 +12,7 @@ export default function PartnershipSection() {
             🤝 Partnership
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-text-secondary max-w-3xl mx-auto px-2">
-            Looking for like-minded partners to build the Web3 developer ecosystem together
+            Looking for like-minded partners to build the <span className="text-primary-glow font-semibold">AI-driven cutting-edge tech</span> <span className="text-primary-glow font-semibold">AI + Web3</span> developer ecosystem together
           </p>
           <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full mt-4 sm:mt-6"></div>
         </div>

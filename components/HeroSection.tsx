@@ -64,11 +64,11 @@ export default function HeroSection() {
             WebkitTextStroke: '1px rgba(255, 165, 0, 0.2)'
           }}
         >
-          <div className="relative inline-block transition-all duration-500 group-hover:scale-105 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary-glow group-hover:via-primary-light group-hover:to-primary-glow md:group-hover:tracking-widest">
-            CryptoTime
+          <div className="relative inline-block transition-all duration-500 group-hover:scale-105 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary-glow group-hover:via-primary-light group-hover:to-primary-glow md:group-hover:tracking-widest whitespace-nowrap">
+            Cutting-Edge Tech
             {/* Sci-fi glow effect overlay */}
             <div className="absolute inset-0 text-primary-glow opacity-0 group-hover:opacity-40 transition-opacity duration-500 blur-sm -z-10 font-orbitron">
-              CryptoTime
+              Cutting-Edge Tech
             </div>
             {/* Neon border effect */}
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-20">
@@ -91,13 +91,13 @@ export default function HeroSection() {
         {/* Subtitle */}
         <div className="mb-8 sm:mb-10 space-y-2 sm:space-y-3">
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-text-primary font-semibold hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide px-2 sm:px-4">
-            <span className="text-primary-glow font-bold">AI</span> + <span className="text-primary-glow font-bold">Web3</span> Developer Community for Chinese Speakers
+            <span className="text-red-500 font-bold">AI-Driven</span> Cutting-Edge Tech Developer Community
           </p>
           <p className="text-sm sm:text-base md:text-lg text-text-secondary hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide px-2 sm:px-4">
-            Bridging AI Innovation with Web3 Technology
+            Focused on <span className="text-primary-glow font-semibold">AI + Web3</span> Collaborative Learning
           </p>
           <p className="text-xs sm:text-sm md:text-base text-text-secondary/80 hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide px-2 sm:px-4">
-            Collaborative Learning × Open Collaboration | From Code to Career
+            Encouraging Open Collaboration | From Code to Career, We're Here to Guide You
           </p>
         </div>
 
