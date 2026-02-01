@@ -31,7 +31,7 @@ export default function FooterSection() {
               </div>
               
               <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-4 sm:mb-6 max-w-md">
-                <span className="text-primary-glow">AI-driven cutting-edge tech</span> innovation community focused on <span className="text-primary-glow">AI + Web3</span>, building an open collaborative ecosystem for the future of technology.
+                Professional <span className="text-primary-glow">China market entry service provider</span> helping international AI products succeed through 100+ communities across 20+ cities.
               </p>
               
               <div className="flex space-x-4">
@@ -69,36 +69,19 @@ export default function FooterSection() {
               <h3 className="text-lg font-bold text-text-primary mb-4">Quick Links</h3>
               <ul className="space-y-3">
                 <li>
-                  <a 
-                    href="#team" 
+                  <a
+                    href="/"
                     className="text-text-secondary hover:text-primary-glow transition-colors"
-                    onClick={() => {
-                      document.getElementById('team')?.scrollIntoView({ behavior: 'smooth' })
-                    }}
                   >
-                    Team
+                    Home
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="#value" 
+                  <a
+                    href="/about"
                     className="text-text-secondary hover:text-primary-glow transition-colors"
-                    onClick={() => {
-                      document.getElementById('value')?.scrollIntoView({ behavior: 'smooth' })
-                    }}
                   >
-                    Value
-                  </a>
-                </li>
-                <li>
-                  <a 
-                    href="#roadmap" 
-                    className="text-text-secondary hover:text-primary-glow transition-colors"
-                    onClick={() => {
-                      document.getElementById('roadmap')?.scrollIntoView({ behavior: 'smooth' })
-                    }}
-                  >
-                    Roadmap
+                    About Us
                   </a>
                 </li>
               </ul>

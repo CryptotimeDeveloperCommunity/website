@@ -38,10 +38,14 @@ export default function WhySection() {
             WebkitTextStroke: '0.5px rgba(255, 165, 0, 0.1)'
           }}>
             Why are we building this{' '}
-            <span className="text-primary-glow font-black">AI + Web3</span>{' '}
-            developer community?
+            <span className="text-primary-glow font-black">DeAI</span>{' '}
+            community?
           </h2>
-          <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full"></div>
+          <p className="text-base sm:text-lg md:text-xl text-text-secondary max-w-4xl mx-auto mt-4 px-4">
+            We operate a network of <span className="text-primary-glow font-bold">100+ AI communities and KOLs</span> across mainland China,
+            with strong connections in <span className="text-primary-glow font-bold">20+ core cities</span>
+          </p>
+          <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full mt-6"></div>
         </div>
 
         {/* Pain Points Grid */}

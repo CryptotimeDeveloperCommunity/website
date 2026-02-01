@@ -15,8 +15,8 @@ const exo2 = Exo_2({
 })
 
 export const metadata: Metadata = {
-  title: 'Cutting-edge Tech Developer Community',
-  description: 'AI-Driven Cutting-Edge Tech Developer Community | Focused on AI + Web3 Collaborative Learning | Encouraging Open Collaboration, From Code to Career',
+  title: 'China Market Entry Service Provider | AI Product Launch',
+  description: 'Professional service provider helping international AI products enter China. 100+ communities, 20+ cities. From product launch to user growth.',
   icons: {
     icon: [
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },

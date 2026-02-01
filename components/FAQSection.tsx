@@ -8,29 +8,29 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      icon: Code,
-      question: "I'm a Web2 developer with no blockchain knowledge. Can I join?",
-      answer: "Absolutely! 70% of our content is designed for zero-experience developers. Follow the learning path with AI assistance, and you can write your first smart contract in 30 days."
+      icon: Target,
+      question: "What makes your service different from traditional marketing agencies?",
+      answer: "We provide authentic community-driven growth instead of paid ads. Our 100+ AI communities and 20+ city presence give you direct access to real developers and tech enthusiasts, not just impressions."
     },
     {
       icon: Users,
-      question: "I'm not a developer, just interested in Web3. Is this suitable for me?",
-      answer: "Perfect! 30% of our members are writers, operators, designers, and other cross-domain contributors. You can use your professional skills to participate in content creation, community operations, event planning, etc."
+      question: "How quickly can you help us launch in China?",
+      answer: "Typically 2-4 weeks from initial consultation to campaign launch. We handle everything: market research, community outreach, content localization, and user feedback collection."
     },
     {
-      icon: Gift,
-      question: "Is the community free?",
-      answer: "Yes, all learning resources, collaborative courses, and event participation are completely free. We maintain operations through blockchain grants and partner sponsorships."
+      icon: Code,
+      question: "Do you only work with AI products?",
+      answer: "While AI products are our specialty, we also work with Web3, developer tools, and hardware products that target China's tech community. If your product serves developers or tech enthusiasts, we can help."
     },
     {
       icon: Lightbulb,
-      question: "How do I start contributing content or making proposals?",
-      answer: "We are optimizing the proposal process. Please stay in touch - any valuable ideas are welcome!"
+      question: "Can you help with hardware manufacturing?",
+      answer: "Yes! We connect you with China's hardware supply chain for rapid prototyping and manufacturing. From PCB design to final assembly, we facilitate the entire process."
     },
     {
-      icon: Target,
-      question: "What are the requirements for participating in collaborative learning/hackathons?",
-      answer: "Zero barriers! We encourage developers of all levels to participate. What matters is learning attitude and collaborative spirit."
+      icon: Gift,
+      question: "What's your pricing model?",
+      answer: "We offer flexible engagement models: project-based, retainer, or revenue-share partnerships. Contact us to discuss what works best for your needs and budget."
     }
   ]
 
@@ -47,7 +47,7 @@ export default function FAQSection() {
             ❓ Frequently Asked Questions
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-text-secondary max-w-3xl mx-auto px-2">
-            Answering your questions about <span className="text-primary-glow font-semibold">CT (Cutting-edge Tech)</span> Developer Community
+            Common questions about our <span className="text-primary-glow font-semibold">China market entry services</span>
           </p>
           <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full mt-4 sm:mt-6"></div>
         </div>
@@ -61,7 +61,7 @@ export default function FAQSection() {
             return (
               <div
                 key={index}
-                className="group bg-gradient-to-r from-bg-secondary/50 to-bg-secondary/30 rounded-xl sm:rounded-2xl border border-text-primary/10 hover:border-primary-glow/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary-glow/10"
+                className="group glass-effect rounded-xl sm:rounded-2xl hover:border-primary-glow/30 transition-all duration-500 hover:shadow-lg hover:shadow-primary-glow/20 card-3d"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
