@@ -51,13 +51,14 @@ npm run lint
 The website now has two main pages:
 
 **Homepage (`app/page.tsx`)** - Business-focused landing page:
-1. Navigation (fixed header)
+1. Navigation (fixed header with "Contact Us" CTA)
 2. HeroSection - Core positioning and value proposition
 3. WhatWeDoSection - Network capabilities (100+ communities, 20+ cities)
-4. PartnershipScenariosSection - 5 key use cases for partners
-5. PartnershipSection - Partnership opportunities
-6. FAQSection
-7. FooterSection
+4. PartnershipScenariosSection - 6 key service offerings
+5. ShowcaseSection - Success stories and case studies (NEW)
+6. PartnershipSection - Partnership opportunities and contact
+7. FAQSection - Common questions
+8. FooterSection
 
 **About Page (`app/about/page.tsx`)** - Team and vision:
 1. Navigation
@@ -70,20 +71,24 @@ The website now has two main pages:
 ### Component Organization
 
 - **`components/`**: All React components are standalone section components
+  - Core sections: HeroSection, WhatWeDoSection, PartnershipScenariosSection, ShowcaseSection, PartnershipSection, FAQSection, FooterSection
+  - Utility components: Navigation, ScrollAnimation, EnhancedButton, EnhancedCard, LoadingSpinner
 - **`app/`**: Next.js App Router structure
   - `layout.tsx`: Root layout with font configuration and metadata
   - `page.tsx`: Main homepage that composes all sections
-  - `globals.css`: Global styles and Tailwind directives
+  - `globals.css`: Global styles, animations, and visual effects
 - **`public/logos/`**: Static assets (team photos, logos, QR codes)
+- **`public/showcase/`**: Event photos and case study images (to be added)
 
 ### Navigation System
 
 The Navigation component (`components/Navigation.tsx`) uses:
 - Client-side component (`'use client'`)
 - Page-based navigation (Home, About)
+- "Contact Us" CTA button linking to Telegram
 - Mobile-responsive hamburger menu
 - Fixed positioning with backdrop blur
-- Links to external resources (GitHub, DeAI Handbook)
+- Glassmorphism effects and smooth transitions
 
 ### Path Aliases
 
@@ -122,12 +127,29 @@ Tailwind config includes custom animations:
 - `twinkle`: Opacity twinkling
 - `orbit`: 360° rotation
 - `fade-in-up`, `fade-in`, `slide-in-left`, `slide-in-right`: Entrance animations
+- `shimmer`: Flowing light effect (NEW)
+- `bounce-subtle`: Gentle bounce animation (NEW)
+- `scale-in`: Scale entrance effect (NEW)
+- `gradient-x`, `gradient-y`: Animated gradients (NEW)
 
 ### Cosmic Background
 
 The site uses a custom cosmic gradient background defined in `globals.css`:
 - `.cosmic-bg` class with radial gradient from red center to black edges
 - Pseudo-element with star field effect using multiple radial gradients
+
+### Advanced Visual Effects (NEW)
+
+Modern design enhancements added to `globals.css`:
+- `.glass-effect`: Frosted glass appearance with backdrop blur
+- `.glass-effect-strong`: Enhanced glass effect for emphasis
+- `.card-3d`: 3D hover transformation for cards
+- `.magnetic-button`: Interactive button with spring animation
+- `.text-shimmer`: Animated gradient text effect
+- `.text-glow`: Subtle red glow for text emphasis
+- `.text-glow-strong`: Intense glow for hero elements
+- `.card-shadow-glow`: Glowing shadow on hover
+- `.gradient-border`: Animated gradient border effect
 
 ### Typography
 
@@ -143,6 +165,11 @@ The site includes mobile-specific optimizations in `globals.css`:
 - Font smoothing for better rendering
 - Minimum touch target sizes (44px) for buttons/links on touch devices
 - Responsive breakpoints throughout components
+- Performance optimizations:
+  - 3D effects disabled on mobile devices
+  - Simplified backdrop-blur on smaller screens
+  - Decorative elements (planets, orbits) hidden on mobile
+  - Reduced animation complexity for better performance
 
 ## Image Handling
 
@@ -154,7 +181,11 @@ Next.js Image component is used with:
 ## Client vs Server Components
 
 - **Navigation**: Client component (uses `useState` for mobile menu)
-- **Other sections**: Check individual components, but most are likely server components unless they use interactivity
+- **ShowcaseSection**: Client component (interactive case studies)
+- **FAQSection**: Client component (uses `useState` for accordion)
+- **FooterSection**: Client component (uses `useState` for QR code modals)
+- **ScrollAnimation**: Client component (uses IntersectionObserver)
+- **Other sections**: Most are client components for animations and interactivity
 - When adding interactivity (state, effects, event handlers), add `'use client'` directive at the top
 
 ## Deployment Notes
@@ -163,3 +194,28 @@ Next.js Image component is used with:
 - The site uses Next.js App Router (experimental flag in config)
 - Static assets are in `public/` directory
 - No environment variables or API routes currently configured
+
+## Recent Updates (2026-02-01)
+
+### New Components
+- **ShowcaseSection**: Displays success stories, case studies, and event highlights
+- **EnhancedButton**: Reusable button component with multiple variants
+- **EnhancedCard**: Reusable card component with glassmorphism effects
+- **LoadingSpinner**: Branded loading state component
+
+### Design Enhancements
+- Added glassmorphism effects throughout the site
+- Implemented 3D card hover transformations
+- Added magnetic button interactions
+- Enhanced shadow and glow effects
+- Improved mobile performance optimizations
+
+### Navigation Updates
+- Changed "DeAI Handbook" to "Contact Us" button
+- Removed external handbook links from footer
+- Streamlined navigation for business focus
+
+### Documentation
+- Created `FRONTEND_OPTIMIZATION.md` with detailed design system documentation
+- Updated component structure and organization
+- Added performance optimization guidelines
