@@ -6,8 +6,8 @@
   },
   "hero": {
     "title": "您进入中国AI市场的门户",
-    "chinaMarketEntry": "中国出海",
-    "serviceProvider": "服务商",
+    "chinaMarketEntry": "中国市场进入",
+    "serviceProvider": "服务提供商",
     "subtitle": "为国际AI产品提供专业的市场进入服务",
     "description": "利用遍布中国20多个城市的100多个AI社区和KOL资源",
     "cta": "开启您的旅程",
@@ -143,8 +143,8 @@
   },
   "faq": {
     "title": "常见问题",
-    "subtitle": "关于我们中国出海服务的常见问题",
-    "subtitleHighlight": "中国出海服务",
+    "subtitle": "关于我们中国市场进入服务的常见问题",
+    "subtitleHighlight": "中国市场进入服务",
     "items": [
       {
         "question": "你们与传统营销机构有什么不同？",
@@ -169,8 +169,8 @@
     ]
   },
   "footer": {
-    "description": "专业的中国出海服务商，通过100+社区遍布20+城市，帮助国际AI产品取得成功。",
-    "descriptionHighlight": "中国出海服务商",
+    "description": "专业的中国市场进入服务提供商，通过100+社区遍布20+城市，帮助国际AI产品取得成功。",
+    "descriptionHighlight": "中国市场进入服务提供商",
     "quickLinks": "快速链接",
     "contact": "联系我们",
     "wechatOfficial": "微信公众号",
@@ -184,10 +184,10 @@
   "about": {
     "hero": {
       "title": "关于我们",
-      "subtitle": "您值得信赖的中国出海合作伙伴",
-      "subtitleHighlight": "中国出海",
+      "subtitle": "您值得信赖的中国市场进入合作伙伴",
+      "subtitleHighlight": "中国市场进入",
       "intro1": "我们是专业的服务提供商，帮助国际AI产品在中国市场取得成功。",
-      "intro2": "依托100+ AI社区和20+城市布局，我们提供从产品发布到硬件制造的全链路出海服务。",
+      "intro2": "依托100+ AI社区和20+城市布局，我们提供从产品发布到硬件制造的全链路市场进入服务。",
       "intro2Highlight1": "100+ AI社区",
       "intro2Highlight2": "20+城市",
       "stat1": "AI社区与KOL",
@@ -254,7 +254,7 @@
     },
     "value": {
       "title": "为什么选择我们",
-      "subtitle": "我们在中国出海领域的独特优势",
+      "subtitle": "我们在中国市场进入领域的独特优势",
       "trackRecord": {
         "title": "经过验证的业绩",
         "description": "多年帮助国际产品在中国取得成功的经验"
