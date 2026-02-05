@@ -1,0 +1,276 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "contact": "联系我们"
+  },
+  "hero": {
+    "title": "您进入中国AI市场的门户",
+    "chinaMarketEntry": "中国出海",
+    "serviceProvider": "服务商",
+    "subtitle": "为国际AI产品提供专业的市场进入服务",
+    "description": "利用遍布中国20多个城市的100多个AI社区和KOL资源",
+    "cta": "开启您的旅程",
+    "learnMore": "了解更多",
+    "scrollToExplore": "向下滚动探索"
+  },
+  "whatWeDo": {
+    "title": "我们的服务",
+    "subtitle": "连接国际AI产品与中国充满活力的科技生态系统",
+    "network": {
+      "title": "广泛的网络",
+      "description": "接入100多个AI社区和KOL——您直达中国科技受众的渠道"
+    },
+    "presence": {
+      "title": "本地化运营",
+      "description": "在20多个城市的实地运营——我们了解本地市场，说本地语言"
+    },
+    "results": {
+      "title": "经过验证的成果",
+      "description": "社区驱动的方法，提供真实的参与度和可衡量的增长"
+    },
+    "hardware": {
+      "title": "硬件资源接入",
+      "description": "直接连接中国硬件供应链，满足您的AI产品需求"
+    }
+  },
+  "services": {
+    "title": "我们的服务",
+    "subtitle": "我们通过以下方式帮助国际AI产品在中国取得成功：",
+    "launch": {
+      "title": "产品发布与推广",
+      "description": "通过我们100+社区网络，帮助您在中国大陆发布和推广AI产品"
+    },
+    "growth": {
+      "title": "用户增长服务",
+      "description": "在20多个城市推动本地开发者和技术爱好者早期采用"
+    },
+    "community": {
+      "title": "社区营销",
+      "description": "执行真实的社区营销活动，比传统付费广告带来更好的投资回报"
+    },
+    "research": {
+      "title": "用户研究与反馈",
+      "description": "从真实用户处收集宝贵洞察，为产品开发提供依据"
+    },
+    "validation": {
+      "title": "市场验证",
+      "description": "在全面扩张前测试和验证产品市场契合度"
+    },
+    "hardware": {
+      "title": "硬件供应链",
+      "description": "连接中国硬件生态，快速原型开发和生产AI硬件产品"
+    },
+    "cta": {
+      "question": "准备好探索我们如何帮助您了吗？",
+      "button": "联系我们"
+    }
+  },
+  "showcase": {
+    "title": "我们的成功案例",
+    "subtitle": "通过社区驱动方式进入中国市场的真实成果",
+    "subtitleHighlight": "社区驱动方式",
+    "onlineCommunity": {
+      "title": "线上社群",
+      "category": "线上社群",
+      "location": "微信、Discord、Telegram",
+      "date": "持续进行中",
+      "participants": "10,000+ 参与者",
+      "description": "在中国建立和管理100多个专注于AI的线上社区，通过微信群、Discord服务器和Telegram频道将国际产品与活跃的中国用户连接起来。",
+      "metrics": { "communities": "社区", "members": "成员", "cities": "城市" },
+      "tags": ["微信群", "Discord", "社区管理", "用户参与"]
+    },
+    "onlineEvent": {
+      "title": "线上活动与网络研讨会",
+      "category": "线上活动",
+      "location": "虚拟活动",
+      "date": "2024-2025",
+      "participants": "5,000+ 参与者",
+      "description": "组织线上产品发布会、网络研讨会和虚拟聚会，向中国市场介绍国际AI产品，包括现场演示、问答环节和专家小组讨论。",
+      "metrics": { "events": "活动", "attendees": "参与者", "products": "产品" },
+      "tags": ["产品发布", "网络研讨会", "现场演示", "虚拟聚会"]
+    },
+    "hackathon": {
+      "title": "AI黑客松",
+      "category": "黑客松",
+      "location": "北京、上海、深圳",
+      "date": "2024-2025",
+      "participants": "2,000+ 参与者",
+      "description": "在中国主要科技中心举办AI黑客松，汇聚开发者使用国际AI工具和平台构建创新解决方案。",
+      "metrics": { "hackathons": "黑客松", "developers": "开发者", "projects": "项目" },
+      "tags": ["黑客松", "开发者活动", "AI创新", "技术竞赛"]
+    },
+    "meetup": {
+      "title": "线下Meetup",
+      "category": "线下Meetup",
+      "location": "多城市",
+      "date": "2024-2025",
+      "participants": "3,000+ 参与者",
+      "description": "在中国20多个城市组织定期的线下聚会和交流活动，在国际AI产品和本地科技社区之间建立面对面的联系。",
+      "metrics": { "meetups": "聚会", "attendees": "参与者", "cities": "城市" },
+      "tags": ["Meetup", "交流", "社区建设", "技术分享"]
+    },
+    "impact": {
+      "title": "整体影响力",
+      "communities": "线上社区",
+      "events": "活动与项目",
+      "participants": "总参与人数",
+      "cities": "覆盖城市"
+    },
+    "cta": {
+      "question": "想成为我们的下一个成功案例吗？",
+      "button": "开启您的旅程"
+    }
+  },
+  "partnership": {
+    "title": "准备进入中国市场？",
+    "subtitle": "让我们讨论如何帮助您的AI产品在中国市场取得成功",
+    "quickChat": {
+      "title": "快速咨询",
+      "description": "通过Telegram联系我们进行快速沟通"
+    },
+    "emailUs": {
+      "title": "邮件联系",
+      "description": "通过邮件发送详细咨询"
+    },
+    "scheduleCall": {
+      "title": "预约通话",
+      "description": "预约咨询讨论您的需求"
+    },
+    "responseTime": "典型响应时间：",
+    "responseValue": "24小时内",
+    "additionalInfo": "我们与各种规模的公司合作——从早期创业公司到成熟企业。无论您是在探索中国市场还是准备发布，我们都能帮助您。"
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "关于我们中国出海服务的常见问题",
+    "subtitleHighlight": "中国出海服务",
+    "items": [
+      {
+        "question": "你们与传统营销机构有什么不同？",
+        "answer": "我们提供真实的社区驱动增长，而非付费广告。我们100+ AI社区和20+城市布局让您直接触达真实的开发者和技术爱好者，而不仅仅是曝光量。"
+      },
+      {
+        "question": "多久能帮助我们在中国发布？",
+        "answer": "通常从初次咨询到活动启动需要2-4周。我们负责一切：市场调研、社区拓展、内容本地化、用户反馈收集。"
+      },
+      {
+        "question": "你们只做AI产品吗？",
+        "answer": "AI产品是我们的专长，但我们也与 Web3、开发者工具和硬件产品合作，只要目标是中国科技社区。如果您的产品服务于开发者或技术爱好者，我们都能帮助。"
+      },
+      {
+        "question": "能帮助硬件制造吗？",
+        "answer": "可以！我们帮您连接中国硬件供应链，实现快速原型开发和生产。从PCB设计到最终组装，我们协助全流程。"
+      },
+      {
+        "question": "你们的定价模式是怎样的？",
+        "answer": "我们提供灵活的合作模式：项目制、月费制或收入分成。联系我们讨论最适合您需求和预算的方案。"
+      }
+    ]
+  },
+  "footer": {
+    "description": "专业的中国出海服务商，通过100+社区遍布20+城市，帮助国际AI产品取得成功。",
+    "descriptionHighlight": "中国出海服务商",
+    "quickLinks": "快速链接",
+    "contact": "联系我们",
+    "wechatOfficial": "微信公众号",
+    "xiaohongshu": "小红书",
+    "scanWechat": "扫码关注我们的微信公众号",
+    "scanXiaohongshu": "扫码关注我们的小红书",
+    "rights": "版权所有。",
+    "home": "首页",
+    "about": "关于我们"
+  },
+  "about": {
+    "hero": {
+      "title": "关于我们",
+      "subtitle": "您值得信赖的中国出海合作伙伴",
+      "subtitleHighlight": "中国出海",
+      "intro1": "我们是专业的服务提供商，帮助国际AI产品在中国市场取得成功。",
+      "intro2": "依托100+ AI社区和20+城市布局，我们提供从产品发布到硬件制造的全链路出海服务。",
+      "intro2Highlight1": "100+ AI社区",
+      "intro2Highlight2": "20+城市",
+      "stat1": "AI社区与KOL",
+      "stat2": "核心城市",
+      "stat3": "核心服务"
+    },
+    "team": {
+      "title": "认识我们的团队",
+      "titleHighlight": "团队",
+      "subtitle": "连接国际创新与中国市场的资深专业人士",
+      "background": "背景",
+      "coreAdvantage": "核心优势",
+      "mission": "我们的使命",
+      "missionText": "通过真实的社区连接和本地市场专业能力，帮助国际AI产品在中国取得成功",
+      "missionHighlight1": "在中国取得成功",
+      "missionHighlight2": "真实的社区连接",
+      "missionHighlight3": "本地市场专业能力",
+      "members": [
+        {
+          "name": "Zhou Mo",
+          "nameChinese": "周莫",
+          "title": "国际数字游民生态连接者",
+          "background": [
+            "数字游民大会联合创始人",
+            "'全栈数字游民调研报告'项目经理",
+            "国际数字游民大会 NomadSummit 组织者",
+            "连接全球100+机构和1,500+数字游民"
+          ],
+          "advantage": "深刻理解全球数字游民生态，为海外OPC创业者进入中国提供精准触达能力"
+        },
+        {
+          "name": "Su Peng",
+          "nameChinese": "苏鹏",
+          "title": "AI开发者社区运营专家",
+          "background": [
+            "知名AI开源社区Datawhale城市负责人",
+            "社区孵化器AGI Villa联合创始人",
+            "多年开发者社区运营经验",
+            "连接1,000+海内外开发者"
+          ],
+          "advantage": "丰富的技术社区运营经验和行业对接能力，提供优质本地技术生态连接"
+        }
+      ]
+    },
+    "vision": {
+      "title": "我们的愿景",
+      "subtitle": "搭建国际创新与中国市场之间的桥梁",
+      "globalToLocal": {
+        "title": "全球化到本地化",
+        "description": "我们帮助国际AI产品应对中国独特的市场环境，提供本地专业能力和真实的社区连接。"
+      },
+      "resultsDriven": {
+        "title": "结果导向",
+        "description": "超越传统营销，我们通过社区驱动策略和实地执行交付可衡量的增长。"
+      },
+      "communityFirst": {
+        "title": "社区优先",
+        "description": "我们的优势在于与中国科技生态中100+社区和1,500+开发者建立的真实关系。"
+      },
+      "longTerm": {
+        "title": "长期合作",
+        "description": "我们不仅是服务商——我们是中国市场的长期合作伙伴，致力于您的持续成功。"
+      }
+    },
+    "value": {
+      "title": "为什么选择我们",
+      "subtitle": "我们在中国出海领域的独特优势",
+      "trackRecord": {
+        "title": "经过验证的业绩",
+        "description": "多年帮助国际产品在中国取得成功的经验"
+      },
+      "network": {
+        "title": "真实的网络",
+        "description": "与100+社区的真实连接，而非仅付费广告"
+      },
+      "fastExecution": {
+        "title": "快速执行",
+        "description": "2-4周启动活动，配备实地支持"
+      },
+      "fullStack": {
+        "title": "全栈服务",
+        "description": "从软件发布到硬件制造——我们全覆盖"
+      }
+    }
+  }
+}

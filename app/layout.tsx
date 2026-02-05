@@ -1,6 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter, Orbitron, Exo_2 } from 'next/font/google'
+import { I18nProvider } from '@/lib/i18n-provider'
+import { defaultLocale } from '@/lib/i18n-config'
+import enTranslations from '@/lib/locales/en.json'
 
 const inter = Inter({ subsets: ['latin'] })
 const orbitron = Orbitron({ 
@@ -35,7 +38,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${orbitron.variable} ${exo2.variable}`}>{children}</body>
+      <body className={`${inter.className} ${orbitron.variable} ${exo2.variable}`}>
+        <I18nProvider locale={defaultLocale} translations={enTranslations as Record<string, unknown>}>
+          {children}
+        </I18nProvider>
+      </body>
     </html>
   )
 }

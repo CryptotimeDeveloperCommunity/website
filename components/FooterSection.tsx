@@ -3,8 +3,11 @@
 import { MessageCircle, Mail, Github, Twitter, Send, ArrowUp, MessageSquare, Heart, X } from 'lucide-react'
 import Image from 'next/image'
 import { useState } from 'react'
+import { useTranslations } from '@/lib/i18n-provider'
 
 export default function FooterSection() {
+  const { locale, t } = useTranslations()
+  const f = t?.footer || {}
   const [showQRCode, setShowQRCode] = useState(false)
   const [showXiaohongshu, setShowXiaohongshu] = useState(false)
   const scrollToTop = () => {
@@ -31,7 +34,18 @@ export default function FooterSection() {
               </div>
               
               <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-4 sm:mb-6 max-w-md">
-                Professional <span className="text-primary-glow">China market entry service provider</span> helping international AI products succeed through 100+ communities across 20+ cities.
+                {(() => {
+                  const desc = f.description as string | undefined
+                  const highlight = f.descriptionHighlight ?? 'China market entry service provider'
+                  if (!desc) return <>Professional <span className="text-primary-glow">China market entry service provider</span> helping international AI products succeed through 100+ communities across 20+ cities.</>
+                  if (!highlight || !desc.includes(highlight)) return desc
+                  return desc.split(highlight).map((part: string, i: number) => (
+                    <span key={i}>
+                      {part}
+                      {i === 0 && <span className="text-primary-glow">{highlight}</span>}
+                    </span>
+                  ))
+                })()}
               </p>
               
               <div className="flex space-x-4">
@@ -66,22 +80,16 @@ export default function FooterSection() {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-lg font-bold text-text-primary mb-4">Quick Links</h3>
+              <h3 className="text-lg font-bold text-text-primary mb-4">{f.quickLinks ?? 'Quick Links'}</h3>
               <ul className="space-y-3">
                 <li>
-                  <a
-                    href="/"
-                    className="text-text-secondary hover:text-primary-glow transition-colors"
-                  >
-                    Home
+                  <a href={`/${locale}`} className="text-text-secondary hover:text-primary-glow transition-colors">
+                    {f.home ?? 'Home'}
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/about"
-                    className="text-text-secondary hover:text-primary-glow transition-colors"
-                  >
-                    About Us
+                  <a href={`/${locale}/about`} className="text-text-secondary hover:text-primary-glow transition-colors">
+                    {f.about ?? 'About Us'}
                   </a>
                 </li>
               </ul>
@@ -89,7 +97,7 @@ export default function FooterSection() {
 
             {/* Contact */}
             <div>
-              <h3 className="text-lg font-bold text-text-primary mb-4">Contact Us</h3>
+              <h3 className="text-lg font-bold text-text-primary mb-4">{f.contact ?? 'Contact Us'}</h3>
               <ul className="space-y-3">
                 <li className="flex items-center space-x-3">
                   <Send className="w-4 h-4 text-primary-glow" />
@@ -119,7 +127,7 @@ export default function FooterSection() {
                     onClick={() => setShowQRCode(true)}
                     className="text-text-secondary hover:text-primary-glow transition-colors cursor-pointer"
                   >
-                  WeChat Official Account
+                  {f.wechatOfficial ?? 'WeChat Official Account'}
                   </button>
                 </li>
                 <li className="flex items-center space-x-3">
@@ -128,7 +136,7 @@ export default function FooterSection() {
                     onClick={() => setShowXiaohongshu(true)}
                     className="text-text-secondary hover:text-primary-glow transition-colors cursor-pointer"
                   >
-                  Xiaohongshu
+                  {f.xiaohongshu ?? 'Xiaohongshu'}
                   </button>
                 </li>
               </ul>
@@ -140,7 +148,7 @@ export default function FooterSection() {
         <div className="py-6 border-t border-text-primary/10">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-text-secondary text-sm mb-4 md:mb-0">
-              © 2025 CryptoTime. All rights reserved.
+              © 2025 CryptoTime. {f.rights ?? 'All rights reserved.'}
             </div>
             
             <div className="flex items-center">
@@ -167,7 +175,7 @@ export default function FooterSection() {
               <X size={24} />
             </button>
             <div className="text-center">
-              <h3 className="text-xl font-bold text-text-primary mb-4">WeChat Official Account</h3>
+              <h3 className="text-xl font-bold text-text-primary mb-4">{f.wechatOfficial ?? 'WeChat Official Account'}</h3>
               <div className="flex justify-center">
                 <Image 
                   src="/logos/qrcode.jpg" 
@@ -178,7 +186,7 @@ export default function FooterSection() {
                 />
               </div>
               <p className="text-text-secondary mt-4 text-sm">
-                Scan to follow our WeChat Official Account
+                {f.scanWechat ?? 'Scan to follow our WeChat Official Account'}
               </p>
             </div>
           </div>
@@ -196,7 +204,7 @@ export default function FooterSection() {
               <X size={24} />
             </button>
             <div className="text-center">
-              <h3 className="text-xl font-bold text-text-primary mb-4">Xiaohongshu</h3>
+              <h3 className="text-xl font-bold text-text-primary mb-4">{f.xiaohongshu ?? 'Xiaohongshu'}</h3>
               <div className="flex justify-center">
                 <Image 
                   src="/logos/xiaohongshu.jpg" 
@@ -207,7 +215,7 @@ export default function FooterSection() {
                 />
               </div>
               <p className="text-text-secondary mt-4 text-sm">
-                Scan to follow us on Xiaohongshu
+                {f.scanXiaohongshu ?? 'Scan to follow us on Xiaohongshu'}
               </p>
             </div>
           </div>

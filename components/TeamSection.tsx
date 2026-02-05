@@ -1,11 +1,13 @@
 'use client'
 
-import { Linkedin, Mail } from 'lucide-react'
 import Image from 'next/image'
 import ScrollAnimation from './ScrollAnimation'
+import { useTranslations } from '@/lib/i18n-provider'
 
 export default function TeamSection() {
-  const teamMembers = [
+  const { t } = useTranslations()
+  const team = t?.about?.team || {}
+  const teamMembers = (team.members && Array.isArray(team.members) && team.members.length >= 2) ? team.members : [
     {
       name: "Zhou Mo",
       nameChinese: "周莫",
@@ -33,6 +35,7 @@ export default function TeamSection() {
       advantage: "Rich technical community operations experience and industry docking capabilities, providing high-quality local technical ecosystem connections"
     }
   ]
+  const members = teamMembers
 
   return (
     <section id="team" className="py-20 bg-bg-primary relative z-10">
@@ -40,16 +43,23 @@ export default function TeamSection() {
         {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-primary mb-4 font-orbitron">
-            Meet Our <span className="text-primary-glow">Team</span>
+            {(() => {
+              const title = team.title ?? 'Meet Our Team'
+              const highlight = team.titleHighlight ?? 'Team'
+              if (!highlight || !title.includes(highlight)) return title
+              return title.split(highlight).map((part: string, i: number) => (
+                <span key={i}>{part}{i === 0 && <span className="text-primary-glow">{highlight}</span>}</span>
+              ))
+            })()}
           </h2>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-            Experienced professionals bridging international innovation and China's market
+            {team.subtitle ?? "Experienced professionals bridging international innovation and China's market"}
           </p>
         </div>
 
         {/* Team Grid */}
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
-          {teamMembers.map((member, index) => (
+          {members.map((member: { name: string; nameChinese: string; title: string; image?: string; background: string[]; advantage: string }, index: number) => (
             <ScrollAnimation
               key={index}
               animation={index === 0 ? "slide-in-left" : "slide-in-right"}
@@ -61,7 +71,7 @@ export default function TeamSection() {
                   <div className="relative w-32 h-32 mx-auto mb-6">
                     <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary-glow/30">
                       <Image
-                        src={member.image}
+                        src={member.image ?? (index === 0 ? '/logos/zhoumo.jpeg' : '/logos/Darren.jpeg')}
                         alt={member.name}
                         width={128}
                         height={128}
@@ -80,7 +90,7 @@ export default function TeamSection() {
                   {/* Background */}
                   <div>
                     <h4 className="text-sm font-bold text-primary-glow uppercase tracking-wide mb-3">
-                      Background
+                      {team.background ?? 'Background'}
                     </h4>
                     <ul className="space-y-2">
                       {member.background.map((item, i) => (
@@ -95,7 +105,7 @@ export default function TeamSection() {
                   {/* Core Advantage */}
                   <div className="bg-primary-glow/5 border-l-4 border-primary-glow rounded-r-lg p-4">
                     <h4 className="text-sm font-bold text-primary-glow uppercase tracking-wide mb-2">
-                      Core Advantage
+                      {team.coreAdvantage ?? 'Core Advantage'}
                     </h4>
                     <p className="text-sm text-text-secondary leading-relaxed">
                       {member.advantage}
@@ -119,11 +129,11 @@ export default function TeamSection() {
             </div>
 
             <h3 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4">
-              Our Mission
+              {team.mission ?? 'Our Mission'}
             </h3>
 
             <p className="text-lg sm:text-xl text-text-secondary leading-relaxed">
-              Helping international AI products <span className="text-primary-glow font-semibold">succeed in China</span> through <span className="text-primary-glow font-semibold">authentic community connections</span> and <span className="text-primary-glow font-semibold">local market expertise</span>
+              {team.missionText ?? "Helping international AI products succeed in China through authentic community connections and local market expertise"}
             </p>
           </div>
         </ScrollAnimation>

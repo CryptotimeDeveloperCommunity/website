@@ -1,0 +1,276 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "title": "Your Gateway to China's AI Market",
+    "chinaMarketEntry": "China Market Entry",
+    "serviceProvider": "Service Provider",
+    "subtitle": "Professional market entry services for international AI products",
+    "description": "Leveraging 100+ AI communities and KOLs across 20+ cities in China",
+    "cta": "Start Your Journey",
+    "learnMore": "Learn More",
+    "scrollToExplore": "Scroll to explore"
+  },
+  "whatWeDo": {
+    "title": "What We Do",
+    "subtitle": "Connecting international AI products with China's vibrant tech ecosystem",
+    "network": {
+      "title": "Extensive Network",
+      "description": "Access to 100+ AI communities and KOLs — your direct channel to China's tech audience"
+    },
+    "presence": {
+      "title": "Local Presence",
+      "description": "On-the-ground operations in 20+ cities — we know the local market and speak the language"
+    },
+    "results": {
+      "title": "Proven Results",
+      "description": "Community-driven approach that delivers authentic engagement and measurable growth"
+    },
+    "hardware": {
+      "title": "Hardware Access",
+      "description": "Direct connections to China's hardware supply chain for your AI product needs"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We help international AI products succeed in China through:",
+    "launch": {
+      "title": "Product Launch & Promotion",
+      "description": "We help you launch and promote AI products in mainland China through our 100+ community network"
+    },
+    "growth": {
+      "title": "User Growth Services",
+      "description": "Drive early adoption among local developers and tech enthusiasts across 20+ cities"
+    },
+    "community": {
+      "title": "Community Marketing",
+      "description": "Execute authentic community-based campaigns that deliver better ROI than traditional paid ads"
+    },
+    "research": {
+      "title": "User Research & Feedback",
+      "description": "Collect valuable insights from real users to inform your product development"
+    },
+    "validation": {
+      "title": "Market Validation",
+      "description": "Test and validate product-market fit before committing to full-scale expansion"
+    },
+    "hardware": {
+      "title": "Hardware Supply Chain",
+      "description": "Connect with China's hardware ecosystem to rapidly prototype and manufacture AI hardware products"
+    },
+    "cta": {
+      "question": "Ready to explore how we can help?",
+      "button": "Get in Touch"
+    }
+  },
+  "showcase": {
+    "title": "Our Success Stories",
+    "subtitle": "Real results from our community-driven approach to China market entry",
+    "subtitleHighlight": "community-driven approach",
+    "onlineCommunity": {
+      "title": "Online Communities",
+      "category": "Online Community",
+      "location": "WeChat, Discord, Telegram",
+      "date": "Ongoing",
+      "participants": "10,000+ participants",
+      "description": "Built and managed 100+ AI-focused online communities across China, connecting international products with engaged Chinese users through WeChat groups, Discord servers, and Telegram channels.",
+      "metrics": { "communities": "Communities", "members": "Members", "cities": "Cities" },
+      "tags": ["WeChat Groups", "Discord", "Community Management", "User Engagement"]
+    },
+    "onlineEvent": {
+      "title": "Online Events & Webinars",
+      "category": "Online Event",
+      "location": "Virtual Events",
+      "date": "2024-2025",
+      "participants": "5,000+ participants",
+      "description": "Organized online product launches, webinars, and virtual meetups to introduce international AI products to Chinese market, featuring live demos, Q&A sessions, and expert panels.",
+      "metrics": { "events": "Events", "attendees": "Attendees", "products": "Products" },
+      "tags": ["Product Launch", "Webinar", "Live Demo", "Virtual Meetup"]
+    },
+    "hackathon": {
+      "title": "AI Hackathons",
+      "category": "Hackathon",
+      "location": "Beijing, Shanghai, Shenzhen",
+      "date": "2024-2025",
+      "participants": "2,000+ participants",
+      "description": "Hosted AI hackathons across major Chinese tech hubs, bringing together developers to build innovative solutions using international AI tools and platforms.",
+      "metrics": { "hackathons": "Hackathons", "developers": "Developers", "projects": "Projects" },
+      "tags": ["Hackathon", "Developer Event", "AI Innovation", "Tech Competition"]
+    },
+    "meetup": {
+      "title": "Offline Meetups",
+      "category": "Offline Meetup",
+      "location": "Multi-city",
+      "date": "2024-2025",
+      "participants": "3,000+ participants",
+      "description": "Organized regular offline meetups and networking events across 20+ cities in China, creating face-to-face connections between international AI products and local tech communities.",
+      "metrics": { "meetups": "Meetups", "attendees": "Attendees", "cities": "Cities" },
+      "tags": ["Meetup", "Networking", "Community Building", "Tech Talk"]
+    },
+    "impact": {
+      "title": "Overall Impact",
+      "communities": "Online Communities",
+      "events": "Events & Activities",
+      "participants": "Total Participants",
+      "cities": "Cities Covered"
+    },
+    "cta": {
+      "question": "Want to be our next success story?",
+      "button": "Start Your Journey"
+    }
+  },
+  "partnership": {
+    "title": "Ready to Enter China?",
+    "subtitle": "Let's discuss how we can help your AI product succeed in China's market",
+    "quickChat": {
+      "title": "Quick Chat",
+      "description": "Message us on Telegram for a quick conversation"
+    },
+    "emailUs": {
+      "title": "Email Us",
+      "description": "Send us a detailed inquiry via email"
+    },
+    "scheduleCall": {
+      "title": "Schedule Call",
+      "description": "Book a consultation to discuss your needs"
+    },
+    "responseTime": "Typical response time:",
+    "responseValue": "Within 24 hours",
+    "additionalInfo": "We work with companies of all sizes — from early-stage startups to established enterprises. Whether you're exploring the China market or ready to launch, we're here to help."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Common questions about our China market entry services",
+    "subtitleHighlight": "China market entry services",
+    "items": [
+      {
+        "question": "What makes your service different from traditional marketing agencies?",
+        "answer": "We provide authentic community-driven growth instead of paid ads. Our 100+ AI communities and 20+ city presence give you direct access to real developers and tech enthusiasts, not just impressions."
+      },
+      {
+        "question": "How quickly can you help us launch in China?",
+        "answer": "Typically 2-4 weeks from initial consultation to campaign launch. We handle everything: market research, community outreach, content localization, and user feedback collection."
+      },
+      {
+        "question": "Do you only work with AI products?",
+        "answer": "While AI products are our specialty, we also work with Web3, developer tools, and hardware products that target China's tech community. If your product serves developers or tech enthusiasts, we can help."
+      },
+      {
+        "question": "Can you help with hardware manufacturing?",
+        "answer": "Yes! We connect you with China's hardware supply chain for rapid prototyping and manufacturing. From PCB design to final assembly, we facilitate the entire process."
+      },
+      {
+        "question": "What's your pricing model?",
+        "answer": "We offer flexible engagement models: project-based, retainer, or revenue-share partnerships. Contact us to discuss what works best for your needs and budget."
+      }
+    ]
+  },
+  "footer": {
+    "description": "Professional China market entry service provider helping international AI products succeed through 100+ communities across 20+ cities.",
+    "descriptionHighlight": "China market entry service provider",
+    "quickLinks": "Quick Links",
+    "contact": "Contact Us",
+    "wechatOfficial": "WeChat Official Account",
+    "xiaohongshu": "Xiaohongshu",
+    "scanWechat": "Scan to follow our WeChat Official Account",
+    "scanXiaohongshu": "Scan to follow us on Xiaohongshu",
+    "rights": "All rights reserved.",
+    "home": "Home",
+    "about": "About Us"
+  },
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "subtitle": "Your trusted partner for China market entry",
+      "subtitleHighlight": "China market entry",
+      "intro1": "We are a professional service provider helping international AI products succeed in China's market.",
+      "intro2": "With 100+ AI communities and presence in 20+ cities, we provide end-to-end market entry services — from product launch to hardware manufacturing.",
+      "intro2Highlight1": "100+ AI communities",
+      "intro2Highlight2": "20+ cities",
+      "stat1": "AI Communities & KOLs",
+      "stat2": "Core Cities",
+      "stat3": "Core Services"
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "titleHighlight": "Team",
+      "subtitle": "Experienced professionals bridging international innovation and China's market",
+      "background": "Background",
+      "coreAdvantage": "Core Advantage",
+      "mission": "Our Mission",
+      "missionText": "Helping international AI products succeed in China through authentic community connections and local market expertise",
+      "missionHighlight1": "succeed in China",
+      "missionHighlight2": "authentic community connections",
+      "missionHighlight3": "local market expertise",
+      "members": [
+        {
+          "name": "Zhou Mo",
+          "nameChinese": "周莫",
+          "title": "International Digital Nomad Ecosystem Connector",
+          "background": [
+            "Co-founder of Digital Nomad Conference",
+            "Project Manager of 'Full-Stack Digital Nomad Survey Report'",
+            "Organizer of International Digital Nomad Conference NomadSummit",
+            "Connecting 100+ organizations and 1,500+ digital nomads globally"
+          ],
+          "advantage": "Deep understanding of global digital nomad ecosystem, with precise touchpoint capabilities for overseas OPC entrepreneurs entering China"
+        },
+        {
+          "name": "Su Peng",
+          "nameChinese": "苏鹏",
+          "title": "AI Developer Community Operations Expert",
+          "background": [
+            "City leader of well-known AI open source community Datawhale",
+            "Co-founder of community incubator AGI Villa",
+            "Years of developer community operations experience",
+            "Connecting 1,000+ domestic and international developers"
+          ],
+          "advantage": "Rich technical community operations experience and industry docking capabilities, providing high-quality local technical ecosystem connections"
+        }
+      ]
+    },
+    "vision": {
+      "title": "Our Vision",
+      "subtitle": "Building the bridge between international innovation and China's market",
+      "globalToLocal": {
+        "title": "Global to Local",
+        "description": "We help international AI products navigate China's unique market landscape, providing local expertise and authentic community connections."
+      },
+      "resultsDriven": {
+        "title": "Results-Driven",
+        "description": "Beyond traditional marketing, we deliver measurable growth through community-driven strategies and on-the-ground execution."
+      },
+      "communityFirst": {
+        "title": "Community First",
+        "description": "Our strength lies in authentic relationships with 100+ communities and 1,500+ developers across China's tech ecosystem."
+      },
+      "longTerm": {
+        "title": "Long-term Partnership",
+        "description": "We're not just a service provider — we're your long-term partner in China, committed to your sustained success."
+      }
+    },
+    "value": {
+      "title": "Why Choose Us",
+      "subtitle": "What sets us apart in China's market entry landscape",
+      "trackRecord": {
+        "title": "Proven Track Record",
+        "description": "Years of experience helping international products succeed in China"
+      },
+      "network": {
+        "title": "Authentic Network",
+        "description": "Real connections with 100+ communities, not just paid advertising"
+      },
+      "fastExecution": {
+        "title": "Fast Execution",
+        "description": "Launch campaigns in 2-4 weeks with on-the-ground support"
+      },
+      "fullStack": {
+        "title": "Full-Stack Services",
+        "description": "From software launch to hardware manufacturing — we cover it all"
+      }
+    }
+  }
+}

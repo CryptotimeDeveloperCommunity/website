@@ -1,8 +1,11 @@
 'use client'
 
 import { Shield, Zap, Users, Award } from 'lucide-react'
+import { useTranslations } from '@/lib/i18n-provider'
 
 export default function ValueSection() {
+  const { t } = useTranslations()
+  const v = t?.about?.value || {}
   return (
     <section id="value" className="py-20 bg-bg-primary relative overflow-hidden">
       {/* Background Effects */}
@@ -28,10 +31,10 @@ export default function ValueSection() {
             textShadow: '0 0 10px rgba(255, 165, 0, 0.2)',
             WebkitTextStroke: '0.5px rgba(255, 165, 0, 0.1)'
           }}>
-            Why Choose Us
+            {v.title ?? 'Why Choose Us'}
           </h2>
           <p className="text-lg sm:text-xl text-text-secondary max-w-3xl mx-auto">
-            What sets us apart in China's market entry landscape
+            {v.subtitle ?? "What sets us apart in China's market entry landscape"}
           </p>
           <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full mt-6"></div>
         </div>
@@ -43,9 +46,9 @@ export default function ValueSection() {
             <div className="flex items-center justify-center w-16 h-16 bg-primary-glow/20 rounded-xl mb-4 mx-auto">
               <Shield className="w-8 h-8 text-primary-glow" />
             </div>
-            <h3 className="text-xl font-bold text-text-primary mb-3">Proven Track Record</h3>
+            <h3 className="text-xl font-bold text-text-primary mb-3">{v.trackRecord?.title ?? 'Proven Track Record'}</h3>
             <p className="text-text-secondary text-sm">
-              Years of experience helping international products succeed in China
+              {v.trackRecord?.description ?? 'Years of experience helping international products succeed in China'}
             </p>
           </div>
 
@@ -54,9 +57,9 @@ export default function ValueSection() {
             <div className="flex items-center justify-center w-16 h-16 bg-primary-glow/20 rounded-xl mb-4 mx-auto">
               <Users className="w-8 h-8 text-primary-glow" />
             </div>
-            <h3 className="text-xl font-bold text-text-primary mb-3">Authentic Network</h3>
+            <h3 className="text-xl font-bold text-text-primary mb-3">{v.network?.title ?? 'Authentic Network'}</h3>
             <p className="text-text-secondary text-sm">
-              Real connections with 100+ communities, not just paid advertising
+              {v.network?.description ?? 'Real connections with 100+ communities, not just paid advertising'}
             </p>
           </div>
 
@@ -65,9 +68,9 @@ export default function ValueSection() {
             <div className="flex items-center justify-center w-16 h-16 bg-primary-glow/20 rounded-xl mb-4 mx-auto">
               <Zap className="w-8 h-8 text-primary-glow" />
             </div>
-            <h3 className="text-xl font-bold text-text-primary mb-3">Fast Execution</h3>
+            <h3 className="text-xl font-bold text-text-primary mb-3">{v.fastExecution?.title ?? 'Fast Execution'}</h3>
             <p className="text-text-secondary text-sm">
-              Launch campaigns in 2-4 weeks with on-the-ground support
+              {v.fastExecution?.description ?? 'Launch campaigns in 2-4 weeks with on-the-ground support'}
             </p>
           </div>
 
@@ -76,9 +79,9 @@ export default function ValueSection() {
             <div className="flex items-center justify-center w-16 h-16 bg-primary-glow/20 rounded-xl mb-4 mx-auto">
               <Award className="w-8 h-8 text-primary-glow" />
             </div>
-            <h3 className="text-xl font-bold text-text-primary mb-3">Full-Stack Services</h3>
+            <h3 className="text-xl font-bold text-text-primary mb-3">{v.fullStack?.title ?? 'Full-Stack Services'}</h3>
             <p className="text-text-secondary text-sm">
-              From software launch to hardware manufacturing — we cover it all
+              {v.fullStack?.description ?? 'From software launch to hardware manufacturing — we cover it all'}
             </p>
           </div>
         </div>

@@ -1,0 +1,276 @@
+{
+  "nav": {
+    "home": "홈",
+    "about": "회사 소개",
+    "contact": "문의하기"
+  },
+  "hero": {
+    "title": "중국 AI 시장 진출의 관문",
+    "chinaMarketEntry": "중국 시장 진출",
+    "serviceProvider": "서비스 제공업체",
+    "subtitle": "국제 AI 제품을 위한 전문 시장 진입 서비스",
+    "description": "중국 20개 이상 도시의 100개 이상 AI 커뮤니티와 KOL 활용",
+    "cta": "시작하기",
+    "learnMore": "자세히 보기",
+    "scrollToExplore": "스크롤하여 탐색"
+  },
+  "whatWeDo": {
+    "title": "서비스 소개",
+    "subtitle": "국제 AI 제품과 중국의 활기찬 기술 생태계 연결",
+    "network": {
+      "title": "광범위한 네트워크",
+      "description": "100개 이상 AI 커뮤니티와 KOL 접근 — 중국 기술 관객에게 직접 연결되는 채널"
+    },
+    "presence": {
+      "title": "현지 진출",
+      "description": "20개 이상 도시에서의 현지 운영 — 현지 시장을 이해하고 현지 언어로 소통"
+    },
+    "results": {
+      "title": "검증된 성과",
+      "description": "진정한 참여와 측정 가능한 성장을 제공하는 커뮤니티 중심 접근법"
+    },
+    "hardware": {
+      "title": "하드웨어 접근",
+      "description": "AI 제품 니즈를 위한 중국 하드웨어 공급망 직접 연결"
+    }
+  },
+  "services": {
+    "title": "서비스 소개",
+    "subtitle": "중국에서 국제 AI 제품 성공을 지원하는 방법:",
+    "launch": {
+      "title": "제품 출시 및 프로모션",
+      "description": "100개 이상 커뮤니티 네트워크를 통해 중국 본토에서 AI 제품 출시 및 프로모션 지원"
+    },
+    "growth": {
+      "title": "사용자 성장 서비스",
+      "description": "20개 이상 도시의 현지 개발자 및 기술 애호가들 사이에서 초기 채택 유도"
+    },
+    "community": {
+      "title": "커뮤니티 마케팅",
+      "description": "기존 유료 광고보다 더 나은 ROI를 제공하는 진정한 커뮤니티 기반 캠페인 실행"
+    },
+    "research": {
+      "title": "사용자 리서치 및 피드백",
+      "description": "제품 개발에 활용할 귀중한 인사이트를 실제 사용자로부터 수집"
+    },
+    "validation": {
+      "title": "시장 검증",
+      "description": "전면적 확장에 착수하기 전 제품-시장 적합성 테스트 및 검증"
+    },
+    "hardware": {
+      "title": "하드웨어 공급망",
+      "description": "중국 하드웨어 생태계와 연결하여 AI 하드웨어 제품의 신속한 프로토타이핑 및 제조"
+    },
+    "cta": {
+      "question": "저희가 어떻게 도움을 줄 수 있는지 탐색할 준비가 되셨나요?",
+      "button": "문의하기"
+    }
+  },
+  "showcase": {
+    "title": "성공 사례",
+    "subtitle": "중국 시장 진출을 위한 커뮤니티 중심 접근법의 실제 성과",
+    "subtitleHighlight": "커뮤니티 중심 접근법",
+    "onlineCommunity": {
+      "title": "온라인 커뮤니티",
+      "category": "온라인 커뮤니티",
+      "location": "위챗, 디스코드, 텔레그램",
+      "date": "진행 중",
+      "participants": "10,000+ 참가자",
+      "description": "중국 전역에서 100개 이상의 AI 특화 온라인 커뮤니티를 구축하고 관리합니다. 위챗 그룹, 디스코드 서버, 텔레그램 채널을 통해 국제 제품과 적극적인 중국 사용자를 연결합니다.",
+      "metrics": { "communities": "커뮤니티", "members": "회원", "cities": "도시" },
+      "tags": ["위챗 그룹", "디스코드", "커뮤니티 관리", "사용자 참여"]
+    },
+    "onlineEvent": {
+      "title": "온라인 이벤트 및 웨비나",
+      "category": "온라인 이벤트",
+      "location": "가상 이벤트",
+      "date": "2024-2025",
+      "participants": "5,000+ 참가자",
+      "description": "라이브 데모, Q&A 세션, 전문가 패널을 특징으로 하는 국제 AI 제품을 중국 시장에 소개하는 온라인 제품 출시회, 웨비나, 가상 밋업을 개최합니다.",
+      "metrics": { "events": "이벤트", "attendees": "참가자", "products": "제품" },
+      "tags": ["제품 출시", "웨비나", "라이브 데모", "가상 밋업"]
+    },
+    "hackathon": {
+      "title": "AI 해커톤",
+      "category": "해커톤",
+      "location": "베이징, 상하이, 선전",
+      "date": "2024-2025",
+      "participants": "2,000+ 참가자",
+      "description": "중국 주요 기술 허브에서 AI 해커톤을 개최하여 국제 AI 도구와 플랫폼을 사용한 혁신적 솔루션 구축을 위해 개발자들을 한자리에 모읍니다.",
+      "metrics": { "hackathons": "해커톤", "developers": "개발자", "projects": "프로젝트" },
+      "tags": ["해커톤", "개발자 이벤트", "AI 혁신", "기술 대회"]
+    },
+    "meetup": {
+      "title": "오프라인 밋업",
+      "category": "오프라인 밋업",
+      "location": "다중 도시",
+      "date": "2024-2025",
+      "participants": "3,000+ 참가자",
+      "description": "중국 20개 이상 도시에서 정기적인 오프라인 밋업 및 네트워킹 이벤트를 개최하여 국제 AI 제품과 현지 기술 커뮤니티 간의 대면 연결을 만듭니다.",
+      "metrics": { "meetups": "밋업", "attendees": "참가자", "cities": "도시" },
+      "tags": ["밋업", "네트워킹", "커뮤니티 구축", "테크 토크"]
+    },
+    "impact": {
+      "title": "전체 임팩트",
+      "communities": "온라인 커뮤니티",
+      "events": "이벤트 및 활동",
+      "participants": "총 참가자",
+      "cities": "커버 도시"
+    },
+    "cta": {
+      "question": "다음 성공 사례가 되시겠습니까?",
+      "button": "시작하기"
+    }
+  },
+  "partnership": {
+    "title": "중국 시장 진출 준비가 되셨나요?",
+    "subtitle": "AI 제품이 중국 시장에서 성공하는 방법에 대해 논의해 보겠습니다",
+    "quickChat": {
+      "title": "빠른 상담",
+      "description": "텔레그램으로 메시지를 보내 빠른 대화"
+    },
+    "emailUs": {
+      "title": "이메일 문의",
+      "description": "이메일로 자세한 문의 보내기"
+    },
+    "scheduleCall": {
+      "title": "통화 예약",
+      "description": "니즈에 대해 상담할 컨설팅 예약"
+    },
+    "responseTime": "일반 응답 시간:",
+    "responseValue": "24시간 이내",
+    "additionalInfo": "초기 스타트업부터 기성 기업까지 모든 규모의 기업과 협력합니다. 중국 시장을 탐색 중이든 출시 준비가 되었든 도움을 드립니다."
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "subtitle": "중국 시장 진입 서비스에 대한 일반적인 질문",
+    "subtitleHighlight": "중국 시장 진입 서비스",
+    "items": [
+      {
+        "question": "기존 마케팅 에이전시와 무엇이 다른가요?",
+        "answer": "유료 광고 대신 진정한 커뮤니티 중심 성장을 제공합니다. 100개 이상의 AI 커뮤니티와 20개 이상 도시 진출로 노출량뿐만 아니라 실제 개발자와 기술 애호가에게 직접 접근할 수 있습니다."
+      },
+      {
+        "question": "중국 출시까지 얼마나 걸리나요?",
+        "answer": "초기 상담부터 캠페인 시작까지 일반적으로 2-4주. 시장 조사, 커뮤니티 확대, 콘텐츠 현지화, 사용자 피드백 수집을 모두 처리합니다."
+      },
+      {
+        "question": "AI 제품만 지원하나요?",
+        "answer": "AI 제품이 전문이지만, Web3, 개발자 도구, 중국 기술 커뮤니티를 대상으로 하는 하드웨어 제품도 지원합니다. 제품이 개발자나 기술 애호가를 대상으로 한다면 도움을 드릴 수 있습니다."
+      },
+      {
+        "question": "하드웨어 제조를 도와주나요?",
+        "answer": "네! 신속한 프로토타이핑과 제조를 위해 중국 하드웨어 공급망과 연결해 드립니다. PCB 설계부터 최종 조립까지 전체 프로세스를 촉진합니다."
+      },
+      {
+        "question": "요금제는 어떻게 되나요?",
+        "answer": "프로젝트 기반, 유지 관리료, 수익 공유 파트너십 등 유연한 참여 모델을 제공합니다. 니즈와 예산에 가장 적합한 방법에 대해 문의해 주세요."
+      }
+    ]
+  },
+  "footer": {
+    "description": "20개 이상 도시에 걸친 100개 이상 커뮤니티를 통해 국제 AI 제품의 중국 시장 성공을 돕는 전문 중국 시장 진입 서비스 제공업체.",
+    "descriptionHighlight": "중국 시장 진입 서비스 제공업체",
+    "quickLinks": "빠른 링크",
+    "contact": "문의하기",
+    "wechatOfficial": "위챗 공식 계정",
+    "xiaohongshu": "샤오홍슈",
+    "scanWechat": "위챗 공식 계정 팔로우하기",
+    "scanXiaohongshu": "샤오홍슈에서 팔로우하기",
+    "rights": "All rights reserved.",
+    "home": "홈",
+    "about": "회사 소개"
+  },
+  "about": {
+    "hero": {
+      "title": "회사 소개",
+      "subtitle": "중국 시장 진출의 신뢰할 수 있는 파트너",
+      "subtitleHighlight": "중국 시장 진출",
+      "intro1": "국제 AI 제품이 중국 시장에서 성공하도록 돕는 전문 서비스 제공업체입니다.",
+      "intro2": "100개 이상 AI 커뮤니티와 20개 이상 도시 진출로 제품 출시부터 하드웨어 제조까지 엔드투엔드 시장 진입 서비스를 제공합니다.",
+      "intro2Highlight1": "100개 이상 AI 커뮤니티",
+      "intro2Highlight2": "20개 이상 도시",
+      "stat1": "AI 커뮤니티 및 KOL",
+      "stat2": "핵심 도시",
+      "stat3": "핵심 서비스"
+    },
+    "team": {
+      "title": "팀 소개",
+      "titleHighlight": "팀",
+      "subtitle": "국제 혁신과 중국 시장을 연결하는 경험 많은 전문가",
+      "background": "배경",
+      "coreAdvantage": "핵심 강점",
+      "mission": "미션",
+      "missionText": "진정한 커뮤니티 연결과 현지 시장 전문 지식을 통해 국제 AI 제품의 중국 성공 지원",
+      "missionHighlight1": "중국에서 성공",
+      "missionHighlight2": "진정한 커뮤니티 연결",
+      "missionHighlight3": "현지 시장 전문 지식",
+      "members": [
+        {
+          "name": "Zhou Mo",
+          "nameChinese": "周莫",
+          "title": "국제 디지털 노마드 생태계 커넥터",
+          "background": [
+            "디지털 노마드 컨퍼런스 공동 설립자",
+            "'풀스택 디지털 노마드 설문 보고서' 프로젝트 매니저",
+            "국제 디지털 노마드 컨퍼런스 NomadSummit 주최자",
+            "전 세계 100개 이상 조직과 1,500명 이상 디지털 노마드 연결"
+          ],
+          "advantage": "글로벌 디지털 노마드 생태계에 대한 깊은 이해, 중국 진출하는 해외 OPC 창업자를 위한 정확한 접점 역량"
+        },
+        {
+          "name": "Su Peng",
+          "nameChinese": "苏鹏",
+          "title": "AI 개발자 커뮤니티 운영 전문가",
+          "background": [
+            "유명 AI 오픈소스 커뮤니티 Datawhale 도시 리더",
+            "커뮤니티 인큐베이터 AGI Villa 공동 설립자",
+            "개발자 커뮤니티 운영 다년간 경험",
+            "1,000명 이상 국내외 개발자 연결"
+          ],
+          "advantage": "풍부한 기술 커뮤니티 운영 경험과 업계 연결 역량, 고품질 현지 기술 생태계 연결 제공"
+        }
+      ]
+    },
+    "vision": {
+      "title": "비전",
+      "subtitle": "국제 혁신과 중국 시장 간의 다리 건설",
+      "globalToLocal": {
+        "title": "글로벌에서 로컬로",
+        "description": "중국의 독특한 시장 환경을 탐색하고 현지 전문 지식과 진정한 커뮤니티 연결을 제공합니다."
+      },
+      "resultsDriven": {
+        "title": "성과 중심",
+        "description": "기존 마케팅을 넘어 커뮤니티 중심 전략과 현지 실행으로 측정 가능한 성장을 제공합니다."
+      },
+      "communityFirst": {
+        "title": "커뮤니티 퍼스트",
+        "description": "강점은 중국 기술 생태계 전반의 100개 이상 커뮤니티와 1,500명 이상 개발자와의 진정한 관계에 있습니다."
+      },
+      "longTerm": {
+        "title": "장기 파트너십",
+        "description": "단순한 서비스 제공업체가 아니라 지속적인 성공에 헌신하는 중국의 장기 파트너입니다."
+      }
+    },
+    "value": {
+      "title": "왜 저희를 선택해야 할까요",
+      "subtitle": "중국 시장 진입 분야에서의 저희의 독특함",
+      "trackRecord": {
+        "title": "검증된 실적",
+        "description": "국제 제품의 중국 성공을 돕는 다년간의 경험"
+      },
+      "network": {
+        "title": "진정한 네트워크",
+        "description": "유료 광고가 아닌 100개 이상 커뮤니티와의 실제 연결"
+      },
+      "fastExecution": {
+        "title": "빠른 실행",
+        "description": "현지 지원과 함께 2-4주 내 캠페인 시작"
+      },
+      "fullStack": {
+        "title": "풀스택 서비스",
+        "description": "소프트웨어 출시부터 하드웨어 제조까지 — 모두 커버"
+      }
+    }
+  }
+}

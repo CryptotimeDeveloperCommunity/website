@@ -1,8 +1,11 @@
 'use client'
 
 import { Target, Globe, Users, TrendingUp } from 'lucide-react'
+import { useTranslations } from '@/lib/i18n-provider'
 
 export default function VisionSection() {
+  const { t } = useTranslations()
+  const v = t?.about?.vision || {}
   return (
     <section className="py-20 bg-bg-secondary relative overflow-hidden">
       {/* Background Pattern */}
@@ -20,10 +23,10 @@ export default function VisionSection() {
             textShadow: '0 0 10px rgba(255, 165, 0, 0.2)',
             WebkitTextStroke: '0.5px rgba(255, 165, 0, 0.1)'
           }}>
-            Our Vision
+            {v.title ?? 'Our Vision'}
           </h2>
           <p className="text-lg sm:text-xl text-text-secondary max-w-3xl mx-auto">
-            Building the bridge between international innovation and China's market
+            {v.subtitle ?? "Building the bridge between international innovation and China's market"}
           </p>
           <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full mt-6"></div>
         </div>
@@ -35,9 +38,9 @@ export default function VisionSection() {
             <div className="flex items-center justify-center w-16 h-16 bg-primary-glow/20 rounded-xl mb-6">
               <Globe className="w-8 h-8 text-primary-glow" />
             </div>
-            <h3 className="text-2xl font-bold text-text-primary mb-4">Global to Local</h3>
+            <h3 className="text-2xl font-bold text-text-primary mb-4">{v.globalToLocal?.title ?? 'Global to Local'}</h3>
             <p className="text-text-secondary leading-relaxed">
-              We help international AI products navigate China's unique market landscape, providing local expertise and authentic community connections.
+              {v.globalToLocal?.description ?? "We help international AI products navigate China's unique market landscape, providing local expertise and authentic community connections."}
             </p>
           </div>
 
@@ -46,9 +49,9 @@ export default function VisionSection() {
             <div className="flex items-center justify-center w-16 h-16 bg-primary-glow/20 rounded-xl mb-6">
               <Target className="w-8 h-8 text-primary-glow" />
             </div>
-            <h3 className="text-2xl font-bold text-text-primary mb-4">Results-Driven</h3>
+            <h3 className="text-2xl font-bold text-text-primary mb-4">{v.resultsDriven?.title ?? 'Results-Driven'}</h3>
             <p className="text-text-secondary leading-relaxed">
-              Beyond traditional marketing, we deliver measurable growth through community-driven strategies and on-the-ground execution.
+              {v.resultsDriven?.description ?? "Beyond traditional marketing, we deliver measurable growth through community-driven strategies and on-the-ground execution."}
             </p>
           </div>
 
@@ -57,9 +60,9 @@ export default function VisionSection() {
             <div className="flex items-center justify-center w-16 h-16 bg-primary-glow/20 rounded-xl mb-6">
               <Users className="w-8 h-8 text-primary-glow" />
             </div>
-            <h3 className="text-2xl font-bold text-text-primary mb-4">Community First</h3>
+            <h3 className="text-2xl font-bold text-text-primary mb-4">{v.communityFirst?.title ?? 'Community First'}</h3>
             <p className="text-text-secondary leading-relaxed">
-              Our strength lies in authentic relationships with 100+ communities and 1,500+ developers across China's tech ecosystem.
+              {v.communityFirst?.description ?? "Our strength lies in authentic relationships with 100+ communities and 1,500+ developers across China's tech ecosystem."}
             </p>
           </div>
 
@@ -68,9 +71,9 @@ export default function VisionSection() {
             <div className="flex items-center justify-center w-16 h-16 bg-primary-glow/20 rounded-xl mb-6">
               <TrendingUp className="w-8 h-8 text-primary-glow" />
             </div>
-            <h3 className="text-2xl font-bold text-text-primary mb-4">Long-term Partnership</h3>
+            <h3 className="text-2xl font-bold text-text-primary mb-4">{v.longTerm?.title ?? 'Long-term Partnership'}</h3>
             <p className="text-text-secondary leading-relaxed">
-              We're not just a service provider — we're your long-term partner in China, committed to your sustained success.
+              {v.longTerm?.description ?? "We're not just a service provider — we're your long-term partner in China, committed to your sustained success."}
             </p>
           </div>
         </div>

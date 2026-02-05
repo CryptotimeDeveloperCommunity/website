@@ -2,8 +2,20 @@
 
 import { Github, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
+import { useTranslations } from '@/lib/i18n-provider'
 
 export default function HeroSection() {
+  const { locale, t } = useTranslations()
+  const hero = t?.hero || {
+    title: "Your Gateway to China's AI Market",
+    chinaMarketEntry: "China Market Entry",
+    serviceProvider: "Service Provider",
+    subtitle: "Professional market entry services for international AI products",
+    description: "Leveraging 100+ AI communities and KOLs across 20+ cities in China",
+    cta: "Start Your Journey",
+    learnMore: "Learn More",
+    scrollToExplore: "Scroll to explore"
+  }
   return (
     <section className="relative min-h-screen flex items-center justify-center cosmic-bg overflow-hidden">
       {/* Background Elements */}
@@ -65,10 +77,10 @@ export default function HeroSection() {
           }}
         >
           <div className="relative inline-block transition-all duration-500 group-hover:scale-105 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary-glow group-hover:via-primary-light group-hover:to-primary-glow md:group-hover:tracking-widest whitespace-nowrap">
-            China Market Entry
+            {hero.chinaMarketEntry}
             {/* Sci-fi glow effect overlay */}
             <div className="absolute inset-0 text-primary-glow opacity-0 group-hover:opacity-40 transition-opacity duration-500 blur-sm -z-10 font-orbitron">
-              China Market Entry
+              {hero.chinaMarketEntry}
             </div>
             {/* Neon border effect */}
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-20">
@@ -76,10 +88,10 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="relative inline-block transition-all duration-500 group-hover:scale-105 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary-light group-hover:via-primary-glow group-hover:to-primary-light md:group-hover:drop-shadow-[0_0_30px_rgba(255,165,0,0.8)] md:group-hover:rotate-1 md:group-hover:tracking-widest whitespace-nowrap">
-            Service Provider
+            {hero.serviceProvider}
             {/* Sci-fi glow effect overlay */}
             <div className="absolute inset-0 text-primary-light opacity-0 group-hover:opacity-40 transition-opacity duration-500 blur-sm -z-10 font-orbitron">
-              Service Provider
+              {hero.serviceProvider}
             </div>
             {/* Neon border effect */}
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-20">
@@ -91,13 +103,10 @@ export default function HeroSection() {
         {/* Subtitle */}
         <div className="mb-8 sm:mb-10 space-y-3 sm:space-y-4">
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-text-primary font-bold hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide px-2 sm:px-4">
-            We help AI products enter China's market
+            {hero.subtitle}
           </p>
           <p className="text-base sm:text-lg md:text-xl text-text-secondary hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide px-2 sm:px-4">
-            <span className="text-primary-glow font-semibold">100+ AI communities</span> · <span className="text-primary-glow font-semibold">20+ cities</span> · <span className="text-primary-glow font-semibold">Real local reach</span>
-          </p>
-          <p className="text-sm sm:text-base md:text-lg text-text-secondary/90 hover:text-primary-glow transition-colors duration-300 cursor-default font-exo2 tracking-wide px-2 sm:px-4 max-w-3xl mx-auto">
-            From product launch to hardware manufacturing — we provide end-to-end market entry services
+            {hero.description}
           </p>
         </div>
 
@@ -113,17 +122,17 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-primary-glow to-primary-light rounded-2xl sm:rounded-3xl animate-pulse opacity-50"></div>
             {/* Shimmer Effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"></div>
-            <span className="relative z-10">Get Started</span>
+            <span className="relative z-10">{hero.cta}</span>
             <ArrowRight size={12} className="sm:w-[14px] sm:h-[14px] md:w-4 md:h-4 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
           </a>
 
           <a
-            href="/about"
+            href={`/${locale}/about`}
             className="group w-full max-w-sm sm:w-auto flex items-center justify-center space-x-2 sm:space-x-3 glass-effect rounded-2xl sm:rounded-3xl px-5 sm:px-6 md:px-10 py-3 sm:py-4 md:py-5 text-text-primary hover:bg-text-primary/10 transition-all duration-300 hover:border-primary-highlight/50 hover:scale-105 font-semibold text-sm sm:text-base md:text-lg relative overflow-hidden magnetic-button shadow-lg hover:shadow-primary-glow/30"
           >
             {/* Button Glow Effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-primary-glow/10 to-primary-light/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <span className="relative z-10">Learn More</span>
+            <span className="relative z-10">{hero.learnMore}</span>
             <ArrowRight size={12} className="sm:w-[14px] sm:h-[14px] md:w-4 md:h-4 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
           </a>
         </div>
@@ -139,7 +148,7 @@ export default function HeroSection() {
         </div>
         {/* Scroll Hint */}
         <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-text-secondary/50 group-hover:text-primary-glow transition-colors duration-300 whitespace-nowrap">
-          Scroll to explore
+          {hero.scrollToExplore}
         </div>
       </div>
     </section>

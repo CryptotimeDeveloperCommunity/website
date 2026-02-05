@@ -3,9 +3,15 @@
 import { useState } from 'react'
 import { Menu, X, MessageCircle } from 'lucide-react'
 import Image from 'next/image'
+import LanguageSwitcher from './LanguageSwitcher'
+import { useTranslations } from '@/lib/i18n-provider'
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { locale, t } = useTranslations()
+
+  // Fallback for pages without i18n context
+  const nav = t?.nav || { home: 'Home', about: 'About', contact: 'Contact Us' }
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-bg-primary/20 backdrop-blur-md border-b border-text-primary/10">
@@ -26,23 +32,24 @@ export default function Navigation() {
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex items-center space-x-8">
                   <a
-                    href="/"
+                    href={`/${locale}`}
                     className="text-text-secondary hover:text-primary-glow transition-all duration-300 font-exo2 tracking-wide relative group"
                   >
-                    <span className="relative z-10">Home</span>
+                    <span className="relative z-10">{nav.home}</span>
                     <div className="absolute inset-0 bg-primary-glow/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg blur-sm -z-10"></div>
                   </a>
                   <a
-                    href="/about"
+                    href={`/${locale}/about`}
                     className="text-text-secondary hover:text-primary-glow transition-all duration-300 font-exo2 tracking-wide relative group"
                   >
-                    <span className="relative z-10">About</span>
+                    <span className="relative z-10">{nav.about}</span>
                     <div className="absolute inset-0 bg-primary-glow/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg blur-sm -z-10"></div>
                   </a>
                 </div>
 
           {/* Right Side Actions */}
-          <div className="hidden md:flex items-center">
+          <div className="hidden md:flex items-center space-x-4">
+            <LanguageSwitcher currentLocale={locale} />
             <a
               href="https://t.me/zhoumo_828"
               target="_blank"
@@ -55,7 +62,7 @@ export default function Navigation() {
               {/* Message Icon */}
               <MessageCircle size={18} className="relative z-10 text-bg-primary" />
 
-              <span className="relative z-10">Contact Us</span>
+              <span className="relative z-10">{nav.contact}</span>
             </a>
           </div>
 
@@ -75,20 +82,23 @@ export default function Navigation() {
           <div className="md:hidden pb-4">
             <div className="px-3 pt-3 pb-4 space-y-2 bg-black/40 backdrop-blur-md rounded-lg mt-2">
               <a
-                href="/"
+                href={`/${locale}`}
                 className="block px-4 py-3 text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-all"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Home
+                {nav.home}
               </a>
               <a
-                href="/about"
+                href={`/${locale}/about`}
                 className="block px-4 py-3 text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-all"
                 onClick={() => setIsMenuOpen(false)}
               >
-                About
+                {nav.about}
               </a>
               <div className="border-t border-white/10 pt-3 mt-2">
+                <div className="mb-3">
+                  <LanguageSwitcher currentLocale={locale} />
+                </div>
                 <a
                   href="https://t.me/zhoumo_828"
                   target="_blank"
@@ -101,7 +111,7 @@ export default function Navigation() {
                   {/* Message Icon */}
                   <MessageCircle size={16} className="relative z-10 text-bg-primary" />
 
-                  <span className="relative z-10">Contact Us</span>
+                  <span className="relative z-10">{nav.contact}</span>
                 </a>
               </div>
             </div>

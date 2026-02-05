@@ -2,46 +2,32 @@
 
 import { Rocket, TrendingUp, Users, MessageSquare, Target, Cpu } from 'lucide-react'
 import ScrollAnimation from './ScrollAnimation'
+import { useTranslations } from '@/lib/i18n-provider'
 
 export default function PartnershipScenariosSection() {
+  const { t } = useTranslations()
+  const s = t?.services || {}
+  const fallbacks: Record<string, { title: string; description: string }> = {
+    launch: { title: 'Product Launch & Promotion', description: 'We help you launch and promote AI products in mainland China through our 100+ community network' },
+    growth: { title: 'User Growth Services', description: 'Drive early adoption among local developers and tech enthusiasts across 20+ cities' },
+    community: { title: 'Community Marketing', description: 'Execute authentic community-based campaigns that deliver better ROI than traditional paid ads' },
+    research: { title: 'User Research & Feedback', description: 'Collect valuable insights from real users to inform your product development' },
+    validation: { title: 'Market Validation', description: 'Test and validate product-market fit before committing to full-scale expansion' },
+    hardware: { title: 'Hardware Supply Chain', description: "Connect with China's hardware ecosystem to rapidly prototype and manufacture AI hardware products" }
+  }
   const scenarios = [
-    {
-      icon: Rocket,
-      title: 'Product Launch & Promotion',
-      description: 'We help you launch and promote AI products in mainland China through our 100+ community network',
-      color: 'from-primary-glow to-primary-light'
-    },
-    {
-      icon: TrendingUp,
-      title: 'User Growth Services',
-      description: 'Drive early adoption among local developers and tech enthusiasts across 20+ cities',
-      color: 'from-primary-light to-primary-highlight'
-    },
-    {
-      icon: Users,
-      title: 'Community Marketing',
-      description: 'Execute authentic community-based campaigns that deliver better ROI than traditional paid ads',
-      color: 'from-primary-glow to-primary-light'
-    },
-    {
-      icon: MessageSquare,
-      title: 'User Research & Feedback',
-      description: 'Collect valuable insights from real users to inform your product development',
-      color: 'from-primary-light to-primary-highlight'
-    },
-    {
-      icon: Target,
-      title: 'Market Validation',
-      description: 'Test and validate product-market fit before committing to full-scale expansion',
-      color: 'from-primary-glow to-primary-light'
-    },
-    {
-      icon: Cpu,
-      title: 'Hardware Supply Chain',
-      description: 'Connect with China\'s hardware ecosystem to rapidly prototype and manufacture AI hardware products',
-      color: 'from-primary-light to-primary-highlight'
-    }
-  ]
+    { icon: Rocket, key: 'launch', color: 'from-primary-glow to-primary-light' },
+    { icon: TrendingUp, key: 'growth', color: 'from-primary-light to-primary-highlight' },
+    { icon: Users, key: 'community', color: 'from-primary-glow to-primary-light' },
+    { icon: MessageSquare, key: 'research', color: 'from-primary-light to-primary-highlight' },
+    { icon: Target, key: 'validation', color: 'from-primary-glow to-primary-light' },
+    { icon: Cpu, key: 'hardware', color: 'from-primary-light to-primary-highlight' }
+  ].map(({ icon, key, color }) => ({
+    icon,
+    title: s[key]?.title ?? fallbacks[key].title,
+    description: s[key]?.description ?? fallbacks[key].description,
+    color
+  }))
 
   return (
     <section className="py-20 bg-bg-secondary relative overflow-hidden">
@@ -60,10 +46,10 @@ export default function PartnershipScenariosSection() {
             textShadow: '0 0 10px rgba(255, 165, 0, 0.2)',
             WebkitTextStroke: '0.5px rgba(255, 165, 0, 0.1)'
           }}>
-            Our Services
+            {s.title ?? 'Our Services'}
           </h2>
           <p className="text-lg sm:text-xl text-text-secondary max-w-3xl mx-auto mb-6">
-            We help international AI products succeed in China through:
+            {s.subtitle ?? 'We help international AI products succeed in China through:'}
           </p>
           <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full"></div>
         </div>
@@ -97,7 +83,7 @@ export default function PartnershipScenariosSection() {
         {/* CTA */}
         <div className="text-center mt-16">
           <p className="text-xl text-text-secondary mb-6">
-            Ready to explore how we can help?
+            {s.cta?.question ?? 'Ready to explore how we can help?'}
           </p>
           <a
             href="https://t.me/zhoumo_828"
@@ -105,7 +91,7 @@ export default function PartnershipScenariosSection() {
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-3 bg-gradient-to-r from-primary-glow to-primary-light rounded-2xl px-10 py-5 text-bg-primary hover:from-primary-light hover:to-primary-glow transition-all duration-300 hover:scale-105 font-semibold text-lg shadow-2xl shadow-primary-glow/50"
           >
-            <span>Get in Touch</span>
+            <span>{s.cta?.button ?? 'Get in Touch'}</span>
           </a>
         </div>
       </div>

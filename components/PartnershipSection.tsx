@@ -1,18 +1,21 @@
 'use client'
 
 import { Mail, MessageCircle, Calendar } from 'lucide-react'
+import { useTranslations } from '@/lib/i18n-provider'
 
 export default function PartnershipSection() {
+  const { t } = useTranslations()
+  const p = t?.partnership || {}
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-primary mb-4 sm:mb-6 font-display">
-            🤝 Ready to Enter China?
+            🤝 {p.title ?? "Ready to Enter China?"}
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-text-secondary max-w-3xl mx-auto px-2">
-            Let's discuss how we can help your AI product succeed in China's market
+            {p.subtitle ?? "Let's discuss how we can help your AI product succeed in China's market"}
           </p>
           <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full mt-4 sm:mt-6"></div>
         </div>
@@ -30,9 +33,9 @@ export default function PartnershipSection() {
               <div className="flex items-center justify-center w-16 h-16 bg-primary-glow/20 rounded-xl mb-6 mx-auto group-hover:bg-primary-glow/30 transition-colors">
                 <MessageCircle className="w-8 h-8 text-primary-glow" />
               </div>
-              <h3 className="text-xl font-bold text-text-primary mb-3">Quick Chat</h3>
+              <h3 className="text-xl font-bold text-text-primary mb-3">{p.quickChat?.title ?? 'Quick Chat'}</h3>
               <p className="text-text-secondary text-sm">
-                Message us on Telegram for a quick conversation
+                {p.quickChat?.description ?? 'Message us on Telegram for a quick conversation'}
               </p>
             </a>
 
@@ -44,9 +47,9 @@ export default function PartnershipSection() {
               <div className="flex items-center justify-center w-16 h-16 bg-primary-glow/20 rounded-xl mb-6 mx-auto group-hover:bg-primary-glow/30 transition-colors">
                 <Mail className="w-8 h-8 text-primary-glow" />
               </div>
-              <h3 className="text-xl font-bold text-text-primary mb-3">Email Us</h3>
+              <h3 className="text-xl font-bold text-text-primary mb-3">{p.emailUs?.title ?? 'Email Us'}</h3>
               <p className="text-text-secondary text-sm">
-                Send us a detailed inquiry via email
+                {p.emailUs?.description ?? 'Send us a detailed inquiry via email'}
               </p>
             </a>
 
@@ -60,9 +63,9 @@ export default function PartnershipSection() {
               <div className="flex items-center justify-center w-16 h-16 bg-primary-glow/20 rounded-xl mb-6 mx-auto group-hover:bg-primary-glow/30 transition-colors">
                 <Calendar className="w-8 h-8 text-primary-glow" />
               </div>
-              <h3 className="text-xl font-bold text-text-primary mb-3">Schedule Call</h3>
+              <h3 className="text-xl font-bold text-text-primary mb-3">{p.scheduleCall?.title ?? 'Schedule Call'}</h3>
               <p className="text-text-secondary text-sm">
-                Book a consultation to discuss your needs
+                {p.scheduleCall?.description ?? 'Book a consultation to discuss your needs'}
               </p>
             </a>
           </div>
@@ -70,12 +73,11 @@ export default function PartnershipSection() {
           {/* Additional Info */}
           <div className="mt-12 text-center">
             <p className="text-text-secondary mb-6">
-              Typical response time: <span className="text-primary-glow font-semibold">Within 24 hours</span>
+              {p.responseTime ?? 'Typical response time:'} <span className="text-primary-glow font-semibold">{p.responseValue ?? 'Within 24 hours'}</span>
             </p>
             <div className="bg-bg-primary/50 rounded-xl p-6 border border-text-primary/10">
               <p className="text-text-secondary text-sm leading-relaxed">
-                We work with companies of all sizes — from early-stage startups to established enterprises.
-                Whether you're exploring the China market or ready to launch, we're here to help.
+                {p.additionalInfo ?? "We work with companies of all sizes — from early-stage startups to established enterprises. Whether you're exploring the China market or ready to launch, we're here to help."}
               </p>
             </div>
           </div>

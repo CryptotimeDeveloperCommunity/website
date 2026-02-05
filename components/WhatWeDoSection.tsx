@@ -2,8 +2,30 @@
 
 import { Network, Users, Target, Cpu } from 'lucide-react'
 import ScrollAnimation from './ScrollAnimation'
+import { useTranslations } from '@/lib/i18n-provider'
 
 export default function WhatWeDoSection() {
+  const { t } = useTranslations()
+  const whatWeDo = t?.whatWeDo || {
+    title: 'What We Do',
+    subtitle: 'Connecting international AI products with China\'s vibrant tech ecosystem',
+    network: {
+      title: 'Extensive Network',
+      description: 'Access to 100+ AI communities and KOLs — your direct channel to China\'s tech audience'
+    },
+    presence: {
+      title: 'Local Presence',
+      description: 'On-the-ground operations in 20+ cities — we know the local market and speak the language'
+    },
+    results: {
+      title: 'Proven Results',
+      description: 'Community-driven approach that delivers authentic engagement and measurable growth'
+    },
+    hardware: {
+      title: 'Hardware Access',
+      description: 'Direct connections to China\'s hardware supply chain for your AI product needs'
+    }
+  }
   return (
     <section className="py-20 bg-bg-primary relative overflow-hidden">
       {/* Background Elements */}
@@ -35,10 +57,10 @@ export default function WhatWeDoSection() {
             textShadow: '0 0 10px rgba(255, 165, 0, 0.2)',
             WebkitTextStroke: '0.5px rgba(255, 165, 0, 0.1)'
           }}>
-            Our Capabilities
+            {whatWeDo.title}
           </h2>
           <p className="text-lg sm:text-xl text-text-secondary max-w-4xl mx-auto">
-            Leveraging <span className="text-primary-glow font-bold">100+ AI communities and KOLs</span> across <span className="text-primary-glow font-bold">20+ cities</span> to deliver results
+            {whatWeDo.subtitle}
           </p>
           <div className="w-24 h-1 bg-primary-glow mx-auto rounded-full mt-6"></div>
         </div>
@@ -54,11 +76,11 @@ export default function WhatWeDoSection() {
                 </div>
 
                 <h3 className="text-2xl font-bold text-text-primary mb-4">
-                  Extensive Network
+                  {whatWeDo.network.title}
                 </h3>
 
                 <p className="text-text-secondary leading-relaxed">
-                  Access to 100+ AI communities and KOLs — your direct channel to China's tech audience
+                  {whatWeDo.network.description}
                 </p>
               </div>
             </div>
@@ -73,11 +95,11 @@ export default function WhatWeDoSection() {
                 </div>
 
                 <h3 className="text-2xl font-bold text-text-primary mb-4">
-                  Local Presence
+                  {whatWeDo.presence.title}
                 </h3>
 
                 <p className="text-text-secondary leading-relaxed">
-                  On-the-ground operations in 20+ cities — we know the local market and speak the language
+                  {whatWeDo.presence.description}
                 </p>
               </div>
             </div>
@@ -92,11 +114,11 @@ export default function WhatWeDoSection() {
                 </div>
 
                 <h3 className="text-2xl font-bold text-text-primary mb-4">
-                  Proven Results
+                  {whatWeDo.results.title}
                 </h3>
 
                 <p className="text-text-secondary leading-relaxed">
-                  Community-driven approach that delivers authentic engagement and measurable growth
+                  {whatWeDo.results.description}
                 </p>
               </div>
             </div>
@@ -111,11 +133,11 @@ export default function WhatWeDoSection() {
                 </div>
 
                 <h3 className="text-2xl font-bold text-text-primary mb-4">
-                  Hardware Supply Chain
+                  {whatWeDo.hardware.title}
                 </h3>
 
                 <p className="text-text-secondary leading-relaxed">
-                  Direct access to China's hardware ecosystem for rapid prototyping and manufacturing
+                  {whatWeDo.hardware.description}
                 </p>
               </div>
             </div>
